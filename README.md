@@ -11,15 +11,17 @@ A new project boilerplate.
 * CPT Core           [jtsternberg](https://github.com/jtsternberg/CPT_Core)
 * Basic MU Plugin
 
-### Installation
+### Clone
 
 You'll need to clone recursive this repo, not download the zip! (It includes other Github submodules and they won't be included in the zip)
 
+Via CLI:
+
 `git clone --recursive https://github.com/WebDevStudios/wd_s.git`
 
-Via SourceTree:
+Via SourceTree/Tower:
 
-![Alt text](https://www.dropbox.com/s/tx1boq1fgl6myg2/Screenshot%202014-05-14%2020.30.44.png "SourceTree")
+Make sure you select "Recusrse submodules"
 
 ### Getting Started
 
