@@ -1,0 +1,14 @@
+[submodule "themes/project-theme"]
+	path = themes/project-theme
+	url = https://github.com/gregrickaby/_s/
+	branch = sass
+[submodule "mu-plugins/cmb"]
+	path = mu-plugins/cmb
+	url = https://github.com/WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress
+	branch = trunk
+[submodule "mu-plugins/taxonomy_core"]
+	path = mu-plugins/taxonomy_core
+	url = https://github.com/jtsternberg/Taxonomy_core
+[submodule "mu-plugins/cpt_core"]
+	path = mu-plugins/cpt_core
+	url = https://github.com/jtsternberg/CPT_Core
