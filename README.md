@@ -21,7 +21,7 @@ Via CLI:
 
 Via SourceTree/Tower:
 
-Make sure you select "Recusrse submodules"
+Select "Recurse submodules"
 
 ### Getting Started
 
