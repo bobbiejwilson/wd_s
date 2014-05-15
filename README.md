@@ -27,9 +27,9 @@ Select "Recurse submodules"
 
 You'll need to change all instances of the names: _s and "project".
 
-* Search for: `'_s'` and replace with: `'your theme name'`
-* Search for: `_s_` and replace with: `your theme name_`
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
-* Search for: `_s-` and replace with: `your theme name-`
-* Search for: `Text Domain: _s` and replace with: `Text Domain: your theme name` in style.css.
-* Search for: `'project'` and replace with: `'your theme name'`
+* Search for: `'_s'` and replace with: `'your project name'`
+* Search for: `_s_` and replace with: `your project name_`
+* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;your project name/code>
+* Search for: `_s-` and replace with: `your project name-`
+* Search for: `Text Domain: _s` and replace with: `Text Domain: your project name` in style.css.
+* Search for: `'project'` and replace with: `'your project name'`
