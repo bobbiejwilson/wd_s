@@ -5,7 +5,7 @@ A new project boilerplate.
 
 ### Includes
 
-* _s (Sass fork)     [automattic](https://github.com/Automattic/_s), [gregrickaby](github.com/gregrickaby/_s/tree/sass)
+* _s (Sass fork)     [automattic](https://github.com/Automattic/_s), [gregrickaby](https://github.com/gregrickaby/_s/tree/sass)
 * CMB                [webdevstudios](https://github.com/WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress)
 * Taxonomy Core      [jtsternberg](https://github.com/jtsternberg/Taxonomy_core)
 * CPT Core           [jtsternberg](https://github.com/jtsternberg/CPT_Core)
