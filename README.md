@@ -33,3 +33,6 @@ You'll need to change all instances of the names: _s and "project".
 * Search for: `_s-` and replace with: `your project name-`
 * Search for: `Text Domain: _s` and replace with: `Text Domain: your project name` in style.css.
 * Search for: `'project'` and replace with: `'your project name'`
+
+Also, you'll want to replace all instaces of `'project-theme'` in `Gruntfile.js` with your renamed theme folder. 
+
