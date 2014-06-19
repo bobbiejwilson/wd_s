@@ -16,7 +16,7 @@ License: GPLv2
  * @package WordPress
  * @subpackage Project
  */
-class Project_Theme_Options {
+class _S_Theme_Options {
 
 	// A single instance of this class.
 	public static $instance      = null;
@@ -144,7 +144,7 @@ class Project_Theme_Options {
 }
 
 
-$Project_Theme_Options = new Project_Theme_Options();
+$_S_Theme_Options = new _S_Theme_Options();
 
 
 /**
@@ -153,6 +153,6 @@ $Project_Theme_Options = new Project_Theme_Options();
  * @return mixed        Option value
  */
 function project_get_option( $key = '' ) {
-    return cmb_get_option( Project_Theme_Options::key(), $key );
+    return cmb_get_option( _S_Theme_Options::key(), $key );
 }
 

@@ -16,7 +16,7 @@ License: GPLv2
  * @package WordPress
  * @subpackage Project
  */
-Class Project_Global_Functions {
+Class _S_Global_Functions {
 
 	public static $instance = null;
 
@@ -61,4 +61,4 @@ Class Project_Global_Functions {
 
 }
 
-$Project_Global_Functions = new Project_Global_Functions;
+$_S_Global_Functions = new _S_Global_Functions;
