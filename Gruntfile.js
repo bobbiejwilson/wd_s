@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
 
+	// load all grunt tasks in package.json matching the `grunt-*` pattern
+	require('load-grunt-tasks')(grunt);
+
 	grunt.initConfig({
 
 		pkg: grunt.file.readJSON('package.json'),
@@ -35,9 +38,7 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					'themes/project-theme/js/customizer.js',
-					'themes/project-theme/js/navigation.js',
-					'themes/project-theme/js/skip-link-focus-fix.js'
+					'themes/project-theme/js/concat/*.js'
 				],
 				dest: 'themes/project-theme/js/project.js',
 			}
@@ -84,20 +85,7 @@ module.exports = function(grunt) {
 
 	});
 
-
-	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-newer');
-	grunt.loadNpmTasks('grunt-githooks');
-
-	grunt.registerTask('imageminnewer', ['newer:imagemin:all']);
+	grunt.registerTask('imageminnewer', ['newer:imagemin']);
 	grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify', 'imageminnewer']);
 
 };
