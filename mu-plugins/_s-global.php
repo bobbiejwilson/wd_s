@@ -18,28 +18,45 @@ License: GPLv2
  */
 Class _S_Global_Functions {
 
-	public static $instance = null;
-
-	/**
-	 * Creates or returns an instance of this class
-	 */
-	public static function engage() {
-
-		if ( self::$instance === null ) {
-			self::$instance = new self();
-		}
-
-		return self::$instance;
-
-	}
-
-
 	/**
 	 * Construct class
 	 */
 	public function __construct() {
+	}
+
+
+	/**
+	 * Hooks method that requires manual firing. Prevents multiple hooking
+	 * @since  1.0.0
+	 */
+	public function do_hooks() {
+		add_action( 'init', array( $this, 'register_post_types' ) );
+		add_action( 'init', array( $this, 'register_taxonomies' ) );
 		add_action( 'wp_head', array( $this, 'header_scripts' ) );
 		add_action( 'wp_footer', array( $this, 'footer_scripts' ) );
+	}
+
+
+	/**
+	 * Registers our custom post-types
+	 */
+	public function register_post_types() {
+		register_via_cpt_core(
+			array( __( 'FAQ', '_s' ), __( 'FAQs', '_s' ), '_s-faqs' ), // Single, Plural, Registered slug
+			array() // register_post_type args
+		);
+	}
+
+
+	/**
+	 * Registers our custom taxonomies
+	 */
+	public function register_taxonomies() {
+		register_via_taxonomy_core(
+			array( __( 'FAQ Tag', '_s' ), __( 'FAQ Tags', '_s' ), '_s-faq-tags' ), // Single, Plural, Registered slug
+			array( 'hierarchical' => false ), // register_taxonomy args
+			array( '_s-faqs' ) // post-types
+		);
 	}
 
 
@@ -62,3 +79,4 @@ Class _S_Global_Functions {
 }
 
 $_S_Global_Functions = new _S_Global_Functions;
+$_S_Global_Functions->do_hooks();
