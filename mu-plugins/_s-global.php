@@ -9,6 +9,11 @@ Version: 1.0.0
 License: GPLv2
 */
 
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 
 /**
  * To prevent data loss on a theme switch, place high level functions here.
