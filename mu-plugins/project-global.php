@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Master Plugin
+Plugin Name: Global Functions
 Plugin URI: http://webdevstudios.com
 Description: Defines global functions to prevent data loss on a theme change.
 Author: WebDevStudios
@@ -38,25 +38,8 @@ Class Project_Global_Functions {
 	 * Construct class
 	 */
 	public function __construct() {
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-		add_action( 'wp_enqueue_styles', array( $this, 'enqueue_styles' ) );
 		add_action( 'wp_head', array( $this, 'header_scripts' ) );
 		add_action( 'wp_footer', array( $this, 'footer_scripts' ) );
-	}
-
-	/**
-	 * Enqueue scripts
-	 */
-	public function enqueue_scripts() {
-
-	}
-
-
-	/**
-	 * Enqueue styles
-	 */
-	public function enqueue_styles() {
-
 	}
 
 
