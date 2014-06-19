@@ -90,7 +90,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-newer');
 
-	grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
+	grunt.registerTask('imageminnewer', ['newer:imagemin:all']);
+	grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify', 'imageminnewer']);
 
 };
