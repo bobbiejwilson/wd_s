@@ -4,6 +4,12 @@ module.exports = function(grunt) {
 
 		pkg: grunt.file.readJSON('package.json'),
 
+		githooks: {
+			all: {
+				'pre-commit': 'default'
+			}
+		},
+
 		sass: {
 			dist: {
 				options: {
@@ -76,8 +82,6 @@ module.exports = function(grunt) {
 
 		}
 
-
-
 	});
 
 
@@ -91,6 +95,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-newer');
+	grunt.loadNpmTasks('grunt-githooks');
 
 	grunt.registerTask('imageminnewer', ['newer:imagemin:all']);
 	grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify', 'imageminnewer']);
