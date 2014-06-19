@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 					lineNumbers: true,
 				},
 				files: {
-					'themes/theme/style.css': 'themes/theme/sass/style.scss'
+					'themes/_s/style.css': 'themes/theme/sass/style.scss'
 				}
 			}
 		},
@@ -28,9 +28,9 @@ module.exports = function(grunt) {
 		cssmin: {
 			minify: {
 				expand: true,
-				cwd: 'themes/theme/',
+				cwd: 'themes/_s/',
 				src: ['*.css', '!*.min.css'],
-				dest: 'themes/theme/',
+				dest: 'themes/_s/',
 				ext: '.min.css'
 			}
 		},
@@ -38,16 +38,16 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					'themes/theme/js/concat/*.js'
+					'themes/_s/js/concat/*.js'
 				],
-				dest: 'themes/theme/js/project.js',
+				dest: 'themes/_s/js/project.js',
 			}
 		},
 
 		uglify: {
 			build: {
-				src: 'themes/theme/js/project.js',
-				dest: 'themes/theme/js/project.min.js'
+				src: 'themes/_s/js/project.js',
+				dest: 'themes/_s/js/project.min.js'
 			}
 		},
 
@@ -55,9 +55,9 @@ module.exports = function(grunt) {
 			dynamic: {
 				files: [{
 					expand: true,
-					cwd: 'themes/theme/images/',
+					cwd: 'themes/_s/images/',
 					src: ['**/*.{png,jpg,gif}'],
-					dest: 'themes/theme/images/'
+					dest: 'themes/_s/images/'
 				}]
 			}
 		},
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
 		watch: {
 
 			scripts: {
-				files: ['themes/theme/js/*.js'],
+				files: ['themes/_s/js/*.js'],
 				tasks: ['concat', 'uglify'],
 				options: {
 					spawn: false,
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 			},
 
 			css: {
-				files: ['themes/theme/sass/partials/*.scss'],
+				files: ['themes/_s/sass/partials/*.scss'],
 				tasks: ['sass', 'cssmin'],
 				options: {
 					spawn: false,
