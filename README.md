@@ -32,5 +32,5 @@ You'll need to change all instances of the names: _s.
 * Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;your project name/code>
 * Search for: `_s-` and replace with: `your project name-`
 * Search for: `Text Domain: _s` and replace with: `Text Domain: your project name` in style.css.
-* Search for: `_S` and replace with: `'Project_Name'`
+* Search for: `_S` and replace with: `Project_Name`
 
