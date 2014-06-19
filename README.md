@@ -27,9 +27,18 @@ Select "Recurse submodules"
 
 You'll need to change all instances of the names: _s.
 
-* Search for: `'_s'` and replace with: `'your project name'`
-* Search for: `_s_` and replace with: `your project name_`
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;your project name</code>
-* Search for: `_s-` and replace with: `your project name-`
-* Search for: `Text Domain: _s` and replace with: `Text Domain: your project name` in style.css.
-* Search for: `_S` and replace with: `Project_Name`
+1. Search for `'_s'` (inside single quotations) to capture the text domain.
+2. Search for `_s_` to capture all the function names.
+3. Search for `Text Domain: _s` in style.css.
+4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
+5. Search for `_s-` to capture prefixed handles.
+6. Search for `_S_` to capture class names.
+
+OR
+
+* Search for: `'_s'` and replace with: `'project-name'`
+* Search for: `_s_` and replace with: `project-name_`
+* Search for: `Text Domain: _s` and replace with: `Text Domain: project-name` in style.css.
+* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
+* Search for: `_s-` and replace with: `project-name-`
+6. Search for `_S_` and replace with: `Project_Name_`
