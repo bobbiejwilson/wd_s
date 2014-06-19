@@ -25,14 +25,12 @@ Select "Recurse submodules"
 
 ### Getting Started
 
-You'll need to change all instances of the names: _s and "project".
+You'll need to change all instances of the names: _s.
 
 * Search for: `'_s'` and replace with: `'your project name'`
 * Search for: `_s_` and replace with: `your project name_`
 * Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;your project name/code>
 * Search for: `_s-` and replace with: `your project name-`
 * Search for: `Text Domain: _s` and replace with: `Text Domain: your project name` in style.css.
-* Search for: `'project'` and replace with: `'your project name'`
-
-Also, you'll want to replace all instaces of `'project-theme'` in `Gruntfile.js` with your renamed theme folder. 
+* Search for: `_S` and replace with: `Project_Name`
 
