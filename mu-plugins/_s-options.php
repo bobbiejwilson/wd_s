@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Theme Options
+Plugin Name: Site Options
 Plugin URI: http://webdevstudios.com
 Description: Creates an options page in the WordPress Dashboard.
 Author: WebDevStudios
@@ -21,13 +21,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @package WordPress
  * @subpackage Project
  */
-class _S_Theme_Options {
+class _S_Site_Options {
 
 	// A single instance of this class.
 	public static $instance      = null;
 	public static $key           = 'cmb_options';
 	public static $title         = '';
-	public static $theme_options = array();
+	public static $site_options = array();
 
 	/**
 	 * Creates or returns an instance of this class.
@@ -98,41 +98,28 @@ class _S_Theme_Options {
 	<?php }
 
 	/**
-	 * Defines the theme option metabox and field configuration
+	 * Defines the site option metabox and field configuration
 	 * @since  0.1.0
 	 * @return array
 	 */
 	public static function option_fields() {
 
 		// Only need to initiate the array once per page-load
-		if ( ! empty( self::$theme_options ) ) {
-			return self::$theme_options;
+		if ( ! empty( self::$site_options ) ) {
+			return self::$site_options;
 		}
 
-		self::$theme_options = array(
-			'id'         => 'theme_options',
+		self::$site_options = array(
+			'id'         => 'site_options',
 			'show_on'    => array( 'key' => 'options-page', 'value' => array( self::$key, ), ),
 			'show_names' => true,
 			'cmb_styles' => false,
 			'fields'     => array(
+				// Site options cmb fields go here.
+			)
+		);
 
-
-			// Image Upload
-			array(
-				'name' => __( 'Some Title', 'cmb' ),
-				'desc' => __( 'Some description', 'cmb' ),
-				'id'   => 'cover_title',
-				'type' => 'title',
-			),
-			array(
-				'name' => __( 'Some Image Upload', 'cmb' ),
-				'desc' => __( 'Upload an image or enter a URL.', 'cmb' ),
-				'id'   => 'default_cover_image',
-				'type' => 'file',
-			),
-		));
-
-		return self::$theme_options;
+		return self::$site_options;
 
 	}
 
@@ -149,7 +136,7 @@ class _S_Theme_Options {
 }
 
 
-$_S_Theme_Options = new _S_Theme_Options();
+$_S_Site_Options = new _S_Site_Options();
 
 
 /**
@@ -157,7 +144,7 @@ $_S_Theme_Options = new _S_Theme_Options();
  * @param  string  $key Options array key
  * @return mixed        Option value
  */
-function project_get_option( $key = '' ) {
-    return cmb_get_option( _S_Theme_Options::key(), $key );
+function _s_get_option( $key = '' ) {
+    return cmb_get_option( _S_Site_Options::key(), $key );
 }
 
