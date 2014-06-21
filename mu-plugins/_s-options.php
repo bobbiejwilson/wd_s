@@ -9,6 +9,11 @@ Version: 1.0.0
 License: GPLv2
 */
 
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 
 /**
  * Create an options page with CMB

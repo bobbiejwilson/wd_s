@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 					lineNumbers: true,
 				},
 				files: {
-					'themes/_s/style.css': 'themes/theme/sass/style.scss'
+					'themes/_s/style.css': 'themes/_s/sass/style.scss'
 				}
 			}
 		},
