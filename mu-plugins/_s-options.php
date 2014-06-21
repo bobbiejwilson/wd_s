@@ -115,22 +115,9 @@ class _S_Site_Options {
 			'show_names' => true,
 			'cmb_styles' => false,
 			'fields'     => array(
-
-
-			// Image Upload
-			array(
-				'name' => __( 'Some Title', 'cmb' ),
-				'desc' => __( 'Some description', 'cmb' ),
-				'id'   => 'cover_title',
-				'type' => 'title',
-			),
-			array(
-				'name' => __( 'Some Image Upload', 'cmb' ),
-				'desc' => __( 'Upload an image or enter a URL.', 'cmb' ),
-				'id'   => 'default_cover_image',
-				'type' => 'file',
-			),
-		));
+				// Site options cmb fields go here.
+			)
+		);
 
 		return self::$site_options;
 
@@ -157,7 +144,7 @@ $_S_Site_Options = new _S_Site_Options();
  * @param  string  $key Options array key
  * @return mixed        Option value
  */
-function project_get_option( $key = '' ) {
+function _s_get_option( $key = '' ) {
     return cmb_get_option( _S_Site_Options::key(), $key );
 }
 
