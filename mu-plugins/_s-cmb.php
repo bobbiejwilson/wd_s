@@ -15,17 +15,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-add_filter( 'cmb_meta_boxes', 'cmb_sample_metaboxes' );
+add_filter( 'cmb_meta_boxes', '_s_cmb_metaboxes' );
 /**
  * Define the metabox and field configurations.
  *
  * @param  array $meta_boxes
  * @return array
  */
-function cmb_sample_metaboxes( array $meta_boxes ) {
+function _s_cmb_metaboxes( array $meta_boxes ) {
 
 	// Start with an underscore to hide fields from custom fields list
-	$prefix = '_cmb_';
+	$prefix = '__s_';
 
 	/**
 	 * Sample metabox to demonstrate each field type included
