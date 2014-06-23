@@ -36,6 +36,15 @@ module.exports = function(grunt) {
 			}
 		},
 
+		autoprefixer: {
+			options: {
+				browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
+			},
+			dist: {
+				src:  'themes/_s/style.css'
+			}
+		},
+
 		cmq: {
 			options: {
 				log: false
@@ -121,6 +130,6 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
-	grunt.registerTask('default', ['csscomb', 'sass', 'cmq', 'cssmin', 'concat', 'uglify', 'imageminnewer']);
+	grunt.registerTask('default', ['csscomb', 'sass', 'autoprefixer', 'cmq', 'cssmin', 'concat', 'uglify', 'imageminnewer']);
 
 };
