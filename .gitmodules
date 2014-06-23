@@ -8,3 +8,21 @@
 [submodule "mu-plugins/cpt_core"]
 	path = mu-plugins/cpt_core
 	url = git@github.com:jtsternberg/CPT_Core.git
+[submodule "plugins/transients-manager"]
+	path = plugins/transients-manager
+	url = git@github.com:pippinsplugins/Transients-Manager.git
+[submodule "plugins/jetpack"]
+	path = plugins/jetpack
+	url = git@github.com:Automattic/jetpack.git
+[submodule "plugins/theme-check"]
+	path = plugins/theme-check
+	url = git@github.com:Pross/theme-check.git
+[submodule "plugins/query-monitor"]
+	path = plugins/query-monitor
+	url = git@github.com:johnbillion/query-monitor.git
+[submodule "plugins/debug-bar-console"]
+	path = plugins/debug-bar-console
+	url = git@github.com:wp-plugins/debug-bar-console.git
+[submodule "plugins/debug-bar"]
+	path = plugins/debug-bar
+	url = git@github.com:wp-plugins/debug-bar.git
