@@ -13,6 +13,17 @@ module.exports = function(grunt) {
 			}
 		},
 
+		csscomb: {
+			dist: {
+				files: [{
+					expand: true,
+					cwd: 'themes/_s/sass/',
+					src: ['**/*.scss', '!**/_mixins.scss'],
+					dest: 'themes/_s/sass/',
+				}]
+			}
+		},
+
 		sass: {
 			dist: {
 				options: {
@@ -21,6 +32,17 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'themes/_s/style.css': 'themes/_s/sass/style.scss'
+				}
+			}
+		},
+
+		cmq: {
+			options: {
+				log: false
+			},
+			dist: {
+				files: {
+					'themes/_s/style.css': 'themes/_s/style.css'
 				}
 			}
 		},
@@ -89,11 +111,16 @@ module.exports = function(grunt) {
 				},
 			},
 
+		},
+
+		clean: {
+			js: ['themes/_s/js/project*', 'themes/_s/js/**/*.min.js'],
+			css: ['themes/_s/style.css', 'themes/_s/style.min.css']
 		}
 
 	});
 
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
-	grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify', 'imageminnewer']);
+	grunt.registerTask('default', ['csscomb', 'sass', 'cmq', 'cssmin', 'concat', 'uglify', 'imageminnewer']);
 
 };

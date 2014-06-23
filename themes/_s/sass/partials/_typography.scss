@@ -6,11 +6,14 @@ body,
 button,
 input,
 select,
-textarea {
-	color: #404040;
-	font-family: $font-sans;
-	@include rem(font-size, 16px);
-	line-height: 1.5;
+textarea
+{
+    font-family: $font-sans;
+    line-height: 1.5;
+
+    color: #404040;
+
+    @include rem(font-size, 16px);
 }
 
 h1,
@@ -18,85 +21,109 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-	clear: both;
+h6
+{
+    clear: both;
 }
 
-p {
-	margin-bottom: 1.5em;
+p
+{
+    margin-bottom: 1.5em;
 }
 
 b,
-strong {
-	font-weight: bold;
+strong
+{
+    font-weight: bold;
 }
 
 dfn,
 cite,
 em,
-i {
-	font-style: italic;
+i
+{
+    font-style: italic;
 }
 
-blockquote {
-	margin: 0 1.5em;
+blockquote
+{
+    margin: 0 1.5em;
 }
 
-address {
-	margin: 0 0 1.5em;
+address
+{
+    margin: 0 0 1.5em;
 }
 
-pre {
-	background: #eee;
-	font-family: $font-mono;
-	@include rem(font-size, 15px);
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
+pre
+{
+    font-family: $font-mono;
+    line-height: 1.6;
+
+    overflow: auto;
+
+    max-width: 100%;
+    margin-bottom: 1.6em;
+    padding: 1.6em;
+
+    background: #eee;
+
+    @include rem(font-size, 15px);
 }
 
 code,
 kbd,
 tt,
-var {
-	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+var
+{
+    font: 15px Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 }
 
 abbr,
-acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
+acronym
+{
+    cursor: help;
+
+    border-bottom: 1px dotted #666;
 }
 
 mark,
-ins {
-	background: #fff9c0;
-	text-decoration: none;
+ins
+{
+    text-decoration: none;
+
+    background: #fff9c0;
 }
 
 sup,
-sub {
-	font-size: 75%;
-	height: 0;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+sub
+{
+    font-size: 75%;
+    line-height: 0;
+
+    position: relative;
+
+    height: 0;
+
+    vertical-align: baseline;
 }
 
-sup {
-	bottom: 1ex;
+sup
+{
+    bottom: 1ex;
 }
 
-sub {
-	top: .5ex;
+sub
+{
+    top: .5ex;
 }
 
-small {
-	font-size: 75%;
+small
+{
+    font-size: 75%;
 }
 
-big {
-	font-size: 125%;
+big
+{
+    font-size: 125%;
 }
