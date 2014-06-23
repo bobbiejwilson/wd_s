@@ -28,6 +28,8 @@ function _s_cmb_metaboxes( array $meta_boxes ) {
 	$prefix = '__s_';
 
 	// Add site metaboxes as needed
+	// Example metaboxes:
+	// https://github.com/WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress/blob/trunk/example-functions.php
 
 	return $meta_boxes;
 }
@@ -38,7 +40,8 @@ add_action( 'init', 'cmb_initialize_cmb_meta_boxes', 9999 );
  */
 function cmb_initialize_cmb_meta_boxes() {
 
-	if ( ! class_exists( 'cmb_Meta_Box' ) )
-		require_once 'init.php';
+	if ( ! class_exists( 'cmb_Meta_Box' ) ) {
+		require_once 'cmb/init.php';
+	}
 
 }
