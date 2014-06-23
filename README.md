@@ -39,6 +39,6 @@ OR
 * Search for: `'_s'` and replace with: `'project-name'`
 * Search for: `_s_` and replace with: `project-name_`
 * Search for: `Text Domain: _s` and replace with: `Text Domain: project-name` in style.css.
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
+* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Project Name</code>
 * Search for: `_s-` and replace with: `project-name-`
 6. Search for `_S_` and replace with: `Project_Name_`
