@@ -46,8 +46,16 @@ module.exports = function(grunt) {
 
 		uglify: {
 			build: {
-				src: 'themes/_s/js/project.js',
-				dest: 'themes/_s/js/project.min.js'
+				options: {
+					mangle: false
+				},
+				files: [{
+					expand: true,
+					cwd: 'themes/_s/js/',
+					src: ['**/*.js', '!**/*.min.js', '!concat/*.js'],
+					dest: 'themes/_s/js/',
+					ext: '.min.js'
+				}]
 			}
 		},
 
@@ -65,7 +73,7 @@ module.exports = function(grunt) {
 		watch: {
 
 			scripts: {
-				files: ['themes/_s/js/*.js'],
+				files: ['themes/_s/js/**/*.js'],
 				tasks: ['concat', 'uglify'],
 				options: {
 					spawn: false,
