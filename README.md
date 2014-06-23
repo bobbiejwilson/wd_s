@@ -45,8 +45,21 @@ OR
 
 OR
 
-Use Yeoman!
+####Use Yeoman!
 
 `npm install -g yo generator-wd-s` - Install Yeoman and the wd_s generator
 
 `yo wd-s` - In the wp-content folder of a new project, follow the prompts and a new magically created wd_s install with your project name in it's place!
+
+Compiling
+----
+
+`grunt javascript` - Concatenate and minify javascript files.
+
+`grunt styles` - Comb, compile, prefix, combine media queries, and minify scss files.
+
+`grunt watch` - Automatically handle changes to javascript and css files.
+
+`grunt imageminnewer` - Minify images
+
+`grunt` - Do it all once!
