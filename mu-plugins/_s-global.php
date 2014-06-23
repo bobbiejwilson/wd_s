@@ -46,6 +46,11 @@ Class _S_Global_Functions {
 	 * Registers our custom post-types
 	 */
 	public function register_post_types() {
+		/**
+		 * Load CPT_Core
+		 */
+		require_once 'cpt_core/CPT_Core.php';
+
 		register_via_cpt_core(
 			array( __( 'FAQ', '_s' ), __( 'FAQs', '_s' ), '_s-faqs' ), // Single, Plural, Registered slug
 			array() // register_post_type args
@@ -57,6 +62,11 @@ Class _S_Global_Functions {
 	 * Registers our custom taxonomies
 	 */
 	public function register_taxonomies() {
+		/**
+		 * Load Taxonomy_Core
+		 */
+		require_once 'taxonomy_core/Taxonomy_Core.php';
+
 		register_via_taxonomy_core(
 			array( __( 'FAQ Tag', '_s' ), __( 'FAQ Tags', '_s' ), '_s-faq-tags' ), // Single, Plural, Registered slug
 			array( 'hierarchical' => false ), // register_taxonomy args
