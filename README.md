@@ -47,6 +47,6 @@ OR
 
 Use Yeoman!
 
-`npm install -g yo generator-wd-s' - Install Yeoman and the wd_s generator
+`npm install -g yo generator-wd-s` - Install Yeoman and the wd_s generator
 
-'yo wd-s' - In the wp-content folder of a new project, follow the prompts and a new magically created wd_s install with your project name in it's place!
+`yo wd-s` - In the wp-content folder of a new project, follow the prompts and a new magically created wd_s install with your project name in it's place!
