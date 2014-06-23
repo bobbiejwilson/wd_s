@@ -1,54 +1,66 @@
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+hr
+{
+    height: 1px;
+    margin-bottom: 1.5em;
+
+    border: 0;
+    background-color: #ccc;
 }
 
 ul,
-ol {
-	margin: 0 0 1.5em 3em;
+ol
+{
+    margin: 0 0 1.5em 3em;
 }
 
-ul {
-	list-style: disc;
+ul
+{
+    list-style: disc;
 }
 
-ol {
-	list-style: decimal;
+ol
+{
+    list-style: decimal;
 }
 
 li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
+li > ol
+{
+    margin-bottom: 0;
+    margin-left: 1.5em;
 }
 
-dt {
-	font-weight: bold;
+dt
+{
+    font-weight: bold;
 }
 
-dd {
-	margin: 0 1.5em 1.5em;
+dd
+{
+    margin: 0 1.5em 1.5em;
 }
 
-img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+img
+{
+    max-width: 100%; /* Adhere to container width. */
+    height: auto; /* Make sure images are scaled correctly. */
 }
 
-figure {
-	margin: 0;
+figure
+{
+    margin: 0;
 }
 
-table {
-	margin: 0 0 1.5em;
-	width: 100%;
+table
+{
+    width: 100%;
+    margin: 0 0 1.5em;
 }
 
-th {
-	font-weight: bold;
+th
+{
+    font-weight: bold;
 }

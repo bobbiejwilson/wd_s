@@ -13,9 +13,11 @@
 .site-content:before,
 .site-content:after,
 .site-footer:before,
-.site-footer:after {
-	content: '';
-	display: table;
+.site-footer:after
+{
+    display: table;
+
+    content: '';
 }
 
 .clear:after,
@@ -23,6 +25,7 @@
 .comment-content:after,
 .site-header:after,
 .site-content:after,
-.site-footer:after {
-	clear: both;
+.site-footer:after
+{
+    clear: both;
 }
