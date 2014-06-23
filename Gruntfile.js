@@ -105,7 +105,7 @@ module.exports = function(grunt) {
 
 			scripts: {
 				files: ['themes/_s/js/**/*.js'],
-				tasks: ['concat', 'uglify'],
+				tasks: ['javascript'],
 				options: {
 					spawn: false,
 				},
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
 
 			css: {
 				files: ['themes/_s/sass/partials/*.scss'],
-				tasks: ['sass', 'cssmin'],
+				tasks: ['styles'],
 				options: {
 					spawn: false,
 					livereload: true,
@@ -129,7 +129,9 @@ module.exports = function(grunt) {
 
 	});
 
+	grunt.registerTask('styles', ['csscomb', 'sass', 'autoprefixer', 'cmq', 'cssmin']);
+	grunt.registerTask('javascript', ['concat', 'uglify']);
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
-	grunt.registerTask('default', ['csscomb', 'sass', 'autoprefixer', 'cmq', 'cssmin', 'concat', 'uglify', 'imageminnewer']);
+	grunt.registerTask('default', ['styles', 'javascript', 'imageminnewer']);
 
 };
