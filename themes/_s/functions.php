@@ -95,6 +95,8 @@ function _s_scripts() {
 	$minnified = '.min';
 	if ( defined( 'WP_DEBUG' ) && WP_DEBUG == true ) {
 		$minnified = '';
+
+		wp_enqueue_script( 'live-reload', '//localhost:35729/livereload.js', array(), '1', true );
 	}
 
 	wp_register_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array(), null );
