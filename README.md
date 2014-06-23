@@ -42,3 +42,11 @@ OR
 * Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Project Name</code>
 * Search for: `_s-` and replace with: `project-name-`
 6. Search for `_S_` and replace with: `Project_Name_`
+
+OR
+
+Use Yeoman!
+
+`npm install -g yo generator-wd-s' - Install Yeoman and the wd_s generator
+
+'yo wd-s' - In the wp-content folder of a new project, follow the prompts and a new magically created wd_s install with your project name in it's place!
