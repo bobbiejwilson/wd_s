@@ -94,7 +94,7 @@ add_action( 'widgets_init', '_s_widgets_init' );
 function _s_scripts() {
 	// Should we use minified or unminified files?
 	$minnified = '.min';
-	if ( defined( 'WP_DEBUG' ) && WP_DEBUG == true ) {
+	if ( defined( 'SCRIPT_DBEUG' ) && SCRIPT_DBEUG == true ) {
 		$minnified = '';
 		// Also enqueue live reload when developing to allow for extensionless reloading!
 		wp_enqueue_script( 'live-reload', '//localhost:35729/livereload.js', array(), '1', true );
