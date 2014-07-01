@@ -101,6 +101,11 @@ module.exports = function(grunt) {
 			}
 		},
 
+		update_submodules: {
+			dist: {
+			}
+		},
+
 		watch: {
 
 			scripts: {
@@ -132,6 +137,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('styles', ['csscomb', 'sass', 'autoprefixer', 'cmq', 'cssmin']);
 	grunt.registerTask('javascript', ['concat', 'uglify']);
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
-	grunt.registerTask('default', ['styles', 'javascript', 'imageminnewer']);
+	grunt.registerTask('default', ['update_submodules', 'styles', 'javascript', 'imageminnewer']);
 
 };
