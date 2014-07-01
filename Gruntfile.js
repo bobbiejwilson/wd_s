@@ -101,6 +101,11 @@ module.exports = function(grunt) {
 			}
 		},
 
+		update_submodules: {
+			dist: {
+			}
+		},
+
 		watch: {
 
 			scripts: {
@@ -131,6 +136,21 @@ module.exports = function(grunt) {
 		clean: {
 			js: ['themes/_s/js/project*', 'themes/_s/js/**/*.min.js'],
 			css: ['themes/_s/style.css', 'themes/_s/style.min.css']
+		},
+
+		'update_submodules': {
+
+			default: {
+				options: {
+					// default command line parameters will be used: --init --recursive
+				}
+			},
+			withCustomParameters: {
+				options: {
+					params: '--force' // specifies your own command-line parameters
+				}
+			},
+
 		}
 
 	});
@@ -138,6 +158,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('styles', ['csscomb', 'sass', 'autoprefixer', 'cmq', 'cssmin']);
 	grunt.registerTask('javascript', ['concat', 'uglify']);
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
-	grunt.registerTask('default', ['styles', 'javascript', 'imageminnewer']);
+	grunt.registerTask('default', ['update_submodules', 'styles', 'javascript', 'imageminnewer']);
 
 };
