@@ -130,6 +130,21 @@ module.exports = function(grunt) {
 		clean: {
 			js: ['themes/_s/js/project*', 'themes/_s/js/**/*.min.js'],
 			css: ['themes/_s/style.css', 'themes/_s/style.min.css']
+		},
+
+		'update_submodules': {
+
+			default: {
+				options: {
+					// default command line parameters will be used: --init --recursive
+				}
+			},
+			withCustomParameters: {
+				options: {
+					params: '--force' // specifies your own command-line parameters
+				}
+			},
+
 		}
 
 	});
