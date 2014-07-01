@@ -105,7 +105,7 @@ module.exports = function(grunt) {
 
 			scripts: {
 				files: ['themes/_s/js/**/*.js'],
-				tasks: ['javascript'],
+				tasks: ['javascript', 'shell:grunt'],
 				options: {
 					spawn: false,
 				},
@@ -113,13 +113,19 @@ module.exports = function(grunt) {
 
 			css: {
 				files: ['themes/_s/sass/partials/*.scss'],
-				tasks: ['styles'],
+				tasks: ['styles', 'shell:grunt'],
 				options: {
 					spawn: false,
 					livereload: true,
 				},
 			},
 
+		},
+
+		shell: {
+			grunt: {
+				command: 'afplay grunt.mp3'
+			}
 		},
 
 		clean: {

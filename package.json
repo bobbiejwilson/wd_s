@@ -18,6 +18,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-csscomb": "^3.0.0-1",
     "grunt-githooks": "~0.3.1",
+    "grunt-shell": "~0.7.0",
     "grunt-newer": "~0.7.0",
     "load-grunt-tasks": "~0.5.0"
   }
