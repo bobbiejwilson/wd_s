@@ -1,30 +1,28 @@
 /*--------------------------------------------------------------
-5.0 Navigation
+Navigation
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-5.1 Links
+Links
 --------------------------------------------------------------*/
-
 a
 {
     color: $color-link;
-    &:visited
-    {
-        color: $color-link-visited;
-    }
-    &:hover,
-    &:focus,
-    &:active
-    {
-        color: $color-link-hover;
-    }
+}
+a:visited
+{
+    color: $color-link-visited;
+}
+a:hover,
+a:focus,
+a:active
+{
+    color: $color-link-hover;
 }
 
 /*--------------------------------------------------------------
-5.2 Menus
+Menus
 --------------------------------------------------------------*/
-
 .main-navigation
 {
     display: block;
@@ -32,71 +30,64 @@ a
     clear: both;
 
     width: 100%;
-    ul
-    {
-        margin: 0;
-        padding-left: 0;
+}
+.main-navigation ul
+{
+    margin: 0;
+    padding-left: 0;
 
-        list-style: none;
-        li
-        {
-            &:hover > ul
-            {
-                display: block;
-            }
-        }
-        ul
-        {
-            position: absolute;
-            z-index: 99999;
-            top: 1.5em;
-            left: -999em;
+    list-style: none;
+}
+.main-navigation li
+{
+    position: relative;
 
-            float: left;
+    float: left;
+}
+.main-navigation a
+{
+    display: block;
 
-            box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
-            li:hover > ul
-            {
-                left: 100%;
-            }
-            a
-            {
-                width: 200px;
-            }
-            ul
-            {
-                top: 0;
-                left: -999em;
-            }
-        }
-    }
-    li
-    {
-        position: relative;
+    text-decoration: none;
+}
+.main-navigation ul ul
+{
+    position: absolute;
+    z-index: 99999;
+    top: 1.5em;
+    left: -999em;
 
-        float: left;
-        &:hover > ul
-        {
-            left: auto;
-        }
-    }
-    a
-    {
-        display: block;
+    float: left;
 
-        text-decoration: none;
-    }
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+}
+.main-navigation ul ul ul
+{
+    top: 0;
+    left: -999em;
+}
+.main-navigation ul ul a
+{
+    width: 200px;
+}
+
+
+
+
+.main-navigation ul li:hover > ul
+{
+    left: auto;
+}
+.main-navigation ul ul li:hover > ul
+{
+    left: 100%;
 }
 
 /* Small menu */
-
 .menu-toggle
 {
     display: none;
-
-    cursor: pointer;
 }
-
 @media screen and (max-width: 600px)
 {
     .menu-toggle,
@@ -110,29 +101,29 @@ a
         display: none;
     }
 }
-
-.comment-navigation,
-.paging-navigation,
-.post-navigation
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation
 {
-    .site-main &
-    {
-        overflow: hidden;
+    overflow: hidden;
 
-        margin: 0 0 1.5em;
-    }
-    .nav-previous
-    {
-        float: left;
+    margin: 0 0 1.5em;
+}
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous
+{
+    float: left;
 
-        width: 50%;
-    }
-    .nav-next
-    {
-        float: right;
+    width: 50%;
+}
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next
+{
+    float: right;
 
-        width: 50%;
+    width: 50%;
 
-        text-align: right;
-    }
+    text-align: right;
 }

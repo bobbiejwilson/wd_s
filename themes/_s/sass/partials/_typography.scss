@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
-2.0 Typography
+Typography
 --------------------------------------------------------------*/
-
 body,
 button,
 input,
@@ -15,7 +14,6 @@ textarea
 
     @include rem(font-size, 16px);
 }
-
 h1,
 h2,
 h3,
@@ -25,18 +23,15 @@ h6
 {
     clear: both;
 }
-
 p
 {
     margin-bottom: 1.5em;
 }
-
 b,
 strong
 {
     font-weight: bold;
 }
-
 dfn,
 cite,
 em,
@@ -44,20 +39,17 @@ i
 {
     font-style: italic;
 }
-
 blockquote
 {
     margin: 0 1.5em;
 }
-
 address
 {
     margin: 0 0 1.5em;
 }
-
 pre
 {
-    font-family: $font-mono;
+    font-family: 'Courier 10 Pitch', Courier, monospace;
     line-height: 1.6;
 
     overflow: auto;
@@ -70,7 +62,6 @@ pre
 
     @include rem(font-size, 15px);
 }
-
 code,
 kbd,
 tt,
@@ -78,7 +69,6 @@ var
 {
     font: 15px Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 }
-
 abbr,
 acronym
 {
@@ -86,7 +76,6 @@ acronym
 
     border-bottom: 1px dotted #666;
 }
-
 mark,
 ins
 {
@@ -94,7 +83,6 @@ ins
 
     background: #fff9c0;
 }
-
 sup,
 sub
 {
@@ -107,23 +95,76 @@ sub
 
     vertical-align: baseline;
 }
-
 sup
 {
     bottom: 1ex;
 }
-
 sub
 {
     top: .5ex;
 }
-
 small
 {
     font-size: 75%;
 }
-
 big
 {
     font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+Elements
+--------------------------------------------------------------*/
+hr
+{
+    height: 1px;
+    margin-bottom: 1.5em;
+
+    border: 0;
+    background-color: #ccc;
+}
+ul,
+ol
+{
+    margin: 0 0 1.5em 3em;
+}
+ul
+{
+    list-style: disc;
+}
+ol
+{
+    list-style: decimal;
+}
+li > ul,
+li > ol
+{
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+dt
+{
+    font-weight: bold;
+}
+dd
+{
+    margin: 0 1.5em 1.5em;
+}
+img
+{
+    max-width: 100%; /* Adhere to container width. */
+    height: auto; /* Make sure images are scaled correctly. */
+}
+figure
+{
+    margin: 0;
+}
+table
+{
+    width: 100%;
+    margin: 0 0 1.5em;
+}
+th
+{
+    font-weight: bold;
 }

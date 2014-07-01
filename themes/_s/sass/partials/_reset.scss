@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
-1.0 - Reset
+Reset
 --------------------------------------------------------------*/
-
 html,
 body,
 div,
@@ -73,7 +72,6 @@ td
     border: 0;
     outline: 0;
 }
-
 html
 {
     font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -83,7 +81,6 @@ html
     -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
         -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
-
 *,
 *:before,
 *:after
@@ -93,12 +90,10 @@ html
        -moz-box-sizing: border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
             box-sizing: border-box;
 }
-
 body
 {
-    background: $color-site-bg;
+    background: #fff; /* Fallback for when there is no custom background color defined. */
 }
-
 article,
 aside,
 details,
@@ -112,20 +107,17 @@ section
 {
     display: block;
 }
-
 ol,
 ul
 {
     list-style: none;
 }
-
 table
 {
     border-spacing: 0;
     /* tables still need 'cellspacing="0"' in the markup */
     border-collapse: separate;
 }
-
 caption,
 th,
 td
@@ -134,7 +126,6 @@ td
 
     text-align: left;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -142,24 +133,20 @@ q:after
 {
     content: '';
 }
-
 blockquote,
 q
 {
     quotes: '' '';
 }
-
 a:focus
 {
     outline: thin dotted;
 }
-
 a:hover,
 a:active
 {
     outline: 0;
 }
-
 a img
 {
     border: 0;

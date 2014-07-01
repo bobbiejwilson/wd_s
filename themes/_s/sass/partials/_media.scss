@@ -1,23 +1,17 @@
 /*--------------------------------------------------------------
-12.0 Media
+Media
 --------------------------------------------------------------*/
-
-.page-content,
-.entry-content,
-.comment-content
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley
 {
-    img.wp-smiley
-    {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 
-        border: none;
-    }
+    border: none;
 }
-
 /* Make sure embeds and iframes fit their containers */
-
 embed,
 iframe,
 object
@@ -26,39 +20,35 @@ object
 }
 
 /*--------------------------------------------------------------
-12.1 Captions
+Captions
 --------------------------------------------------------------*/
-
 .wp-caption
 {
     max-width: 100%;
     margin-bottom: 1.5em;
-    img[class*='wp-image-']
-    {
-        display: block;
-
-        margin: 0 auto;
-    }
-    .wp-caption-text
-    {
-        margin: .8075em 0;
-    }
 }
+.wp-caption img[class*='wp-image-']
+{
+    display: block;
 
+    margin: 0 auto;
+}
 .wp-caption-text
 {
     text-align: center;
 }
+.wp-caption .wp-caption-text
+{
+    margin: .8075em 0;
+}
 
 /*--------------------------------------------------------------
-12.2 Galleries
+Galleries
 --------------------------------------------------------------*/
-
 .gallery
 {
     margin-bottom: 1.5em;
 }
-
 .gallery-item
 {
     display: inline-block;
@@ -67,36 +57,36 @@ object
 
     text-align: center;
     vertical-align: top;
-    .gallery-columns-2 &
-    {
-        max-width: 50%;
-    }
-    .gallery-columns-3 &
-    {
-        max-width: 33.33%;
-    }
-    .gallery-columns-4 &
-    {
-        max-width: 25%;
-    }
-    .gallery-columns-5 &
-    {
-        max-width: 20%;
-    }
-    .gallery-columns-6 &
-    {
-        max-width: 16.66%;
-    }
-    .gallery-columns-7 &
-    {
-        max-width: 14.28%;
-    }
-    .gallery-columns-8 &
-    {
-        max-width: 12.5%;
-    }
-    .gallery-columns-9 &
-    {
-        max-width: 11.11%;
-    }
+}
+.gallery-columns-2 .gallery-item
+{
+    max-width: 50%;
+}
+.gallery-columns-3 .gallery-item
+{
+    max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item
+{
+    max-width: 25%;
+}
+.gallery-columns-5 .gallery-item
+{
+    max-width: 20%;
+}
+.gallery-columns-6 .gallery-item
+{
+    max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item
+{
+    max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item
+{
+    max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item
+{
+    max-width: 11.11%;
 }

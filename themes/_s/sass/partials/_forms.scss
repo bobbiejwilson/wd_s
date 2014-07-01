@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
-4.0 Forms
+Forms
 --------------------------------------------------------------*/
-
 button,
 input,
 select,
@@ -13,12 +12,13 @@ textarea
 
     vertical-align: baseline; /* Improves appearance and consistency in all browsers */
 }
-
 button,
 input[type='button'],
 input[type='reset'],
 input[type='submit']
 {
+    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 1;
 
     padding: .6em 1em .4em;
@@ -34,26 +34,32 @@ input[type='submit']
     text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
 
     -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
-    @include rem(font-size, 12px);
-    &:hover
-    {
-        border-color: #ccc #bbb #aaa;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .8), inset 0 15px 17px rgba(255, 255, 255, .8), inset 0 -5px 12px rgba(0, 0, 0, .02);
-    }
-    &:focus,
-    &:active
-    {
-        border-color: #aaa #bbb #bbb;
-        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, .5), inset 0 2px 5px rgba(0, 0, 0, .15);
-    }
 }
-
+button:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover
+{
+    border-color: #ccc #bbb #aaa;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .8), inset 0 15px 17px rgba(255, 255, 255, .8), inset 0 -5px 12px rgba(0, 0, 0, .02);
+}
+button:focus,
+input[type='button']:focus,
+input[type='reset']:focus,
+input[type='submit']:focus,
+button:active,
+input[type='button']:active,
+input[type='reset']:active,
+input[type='submit']:active
+{
+    border-color: #aaa #bbb #bbb;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, .5), inset 0 2px 5px rgba(0, 0, 0, .15);
+}
 input[type='checkbox'],
 input[type='radio']
 {
     padding: 0; /* Addresses excess padding in IE8/9 */
 }
-
 input[type='search']
 {
     -webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
@@ -61,13 +67,12 @@ input[type='search']
             box-sizing: content-box;
 
     -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
-    &::-webkit-search-decoration
-    {
-        /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
-        -webkit-appearance: none;
-    }
 }
-
+input[type='search']::-webkit-search-decoration
+{
+    /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+    -webkit-appearance: none;
+}
 button::-moz-focus-inner,
 input::-moz-focus-inner
 {
@@ -76,7 +81,6 @@ input::-moz-focus-inner
 
     border: 0;
 }
-
 input[type='text'],
 input[type='email'],
 input[type='url'],
@@ -87,12 +91,16 @@ textarea
     color: #666;
     border: 1px solid #ccc;
     border-radius: 3px;
-    &:focus
-    {
-        color: #111;
-    }
 }
-
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+textarea:focus
+{
+    color: #111;
+}
 input[type='text'],
 input[type='email'],
 input[type='url'],
@@ -101,7 +109,6 @@ input[type='search']
 {
     padding: 3px;
 }
-
 textarea
 {
     overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
