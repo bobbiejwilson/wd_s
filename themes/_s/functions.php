@@ -101,7 +101,7 @@ function _s_scripts() {
 	 * Should we load minified scripts? Also enqueue live reload to allow for extensionless reloading.
 	 */
 	$minnified = '.min';
-	if ( defined( 'SCRIPT_DBEUG' ) && SCRIPT_DBEUG == true ) {
+	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG == true ) {
 
 		$minnified = '';
 		wp_enqueue_script( 'live-reload', '//localhost:35729/livereload.js', array(), $version, true );
