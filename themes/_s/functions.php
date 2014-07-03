@@ -108,7 +108,7 @@ function _s_scripts() {
 
 	}
 
-	wp_register_style( 'font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.csss', array(), null );
+	wp_register_style( 'font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css', array(), null );
 	wp_enqueue_style( 'font-awesome' );
 
 	wp_enqueue_style( '_s-style', get_stylesheet_directory_uri() . '/style' . $minnified . '.css' );
