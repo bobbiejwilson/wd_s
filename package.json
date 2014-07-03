@@ -1,6 +1,21 @@
 {
-  "name": "_s",
+  "name": "wd_s",
   "version": "0.1.0",
+  "description": "A new project boilerplate for WordPress sites.",
+  "author": "WebDevStudios",
+  "homepage": "https://github.com/WebDevStudios/wd_s",
+  "bugs": "https://github.com/WebDevStudios/wd_s/issues",
+  "repository"  : {
+    "type": "git",
+    "url": "git://github.com/WebDevStudios/wd_s.git"
+  },
+  "licenses": [
+    {
+      "type": "GPL-2.0+",
+      "url": "https://github.com/WebDevStudios/wd_s/blob/master/LICENSE"
+    }
+  ],
+  "contributors": "https://github.com/WebDevStudios/wd_s/graphs/contributors",
   "devDependencies": {
     "css-parse": "^1.5.3",
     "glob": "^4.0.2",
