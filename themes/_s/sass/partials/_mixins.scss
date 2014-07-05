@@ -83,7 +83,7 @@
 		@media screen and (max-width: 800px) { @content; }
 	}
 
-	@else if $point == mobile {
+	@else if $point == phone {
 		@media screen and (max-width: 480px)  { @content; }
 	}
 }
