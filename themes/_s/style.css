@@ -54,7 +54,7 @@ and Blueprint http://www.blueprintcss.org/
 Reset
 --------------------------------------------------------------*/
 
-/* line 4, sass/partials/_reset.scss */
+/* line 61, sass/partials/_reset.scss */
 
 html,
 body,
@@ -124,7 +124,7 @@ td {
 	outline: 0;
 }
 
-/* line 75, sass/partials/_reset.scss */
+/* line 76, sass/partials/_reset.scss */
 
 html {
 	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -133,7 +133,7 @@ html {
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 
-/* line 84, sass/partials/_reset.scss */
+/* line 87, sass/partials/_reset.scss */
 
 *,
 *:before,
@@ -143,13 +143,13 @@ html {
 	box-sizing: border-box;
 }
 
-/* line 93, sass/partials/_reset.scss */
+/* line 94, sass/partials/_reset.scss */
 
 body {
 	background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 
-/* line 97, sass/partials/_reset.scss */
+/* line 107, sass/partials/_reset.scss */
 
 article,
 aside,
@@ -164,21 +164,21 @@ section {
 	display: block;
 }
 
-/* line 110, sass/partials/_reset.scss */
+/* line 112, sass/partials/_reset.scss */
 
 ol,
 ul {
 	list-style: none;
 }
 
-/* line 115, sass/partials/_reset.scss */
+/* line 116, sass/partials/_reset.scss */
 
 table {
 	border-spacing: 0; /* tables still need 'cellspacing="0"' in the markup */
 	border-collapse: separate;
 }
 
-/* line 121, sass/partials/_reset.scss */
+/* line 124, sass/partials/_reset.scss */
 
 caption,
 th,
@@ -187,7 +187,7 @@ td {
 	text-align: left;
 }
 
-/* line 129, sass/partials/_reset.scss */
+/* line 133, sass/partials/_reset.scss */
 
 blockquote:before,
 blockquote:after,
@@ -196,27 +196,27 @@ q:after {
 	content: '';
 }
 
-/* line 136, sass/partials/_reset.scss */
+/* line 138, sass/partials/_reset.scss */
 
 blockquote,
 q {
 	quotes: '' '';
 }
 
-/* line 141, sass/partials/_reset.scss */
+/* line 142, sass/partials/_reset.scss */
 
 a:focus {
 	outline: thin dotted;
 }
 
-/* line 145, sass/partials/_reset.scss */
+/* line 147, sass/partials/_reset.scss */
 
 a:hover,
 a:active {
 	outline: 0;
 }
 
-/* line 150, sass/partials/_reset.scss */
+/* line 151, sass/partials/_reset.scss */
 
 a img {
 	border: 0;
@@ -226,7 +226,7 @@ a img {
 Typography
 --------------------------------------------------------------*/
 
-/* line 4, sass/partials/_typography.scss */
+/* line 9, sass/partials/_typography.scss */
 
 body,
 button,
@@ -240,7 +240,7 @@ textarea {
 	font-size: 1.6rem;
 }
 
-/* line 17, sass/partials/_typography.scss */
+/* line 23, sass/partials/_typography.scss */
 
 h1,
 h2,
@@ -251,20 +251,20 @@ h6 {
 	clear: both;
 }
 
-/* line 26, sass/partials/_typography.scss */
+/* line 27, sass/partials/_typography.scss */
 
 p {
 	margin-bottom: 1.5em;
 }
 
-/* line 30, sass/partials/_typography.scss */
+/* line 32, sass/partials/_typography.scss */
 
 b,
 strong {
 	font-weight: bold;
 }
 
-/* line 35, sass/partials/_typography.scss */
+/* line 39, sass/partials/_typography.scss */
 
 dfn,
 cite,
@@ -273,19 +273,19 @@ i {
 	font-style: italic;
 }
 
-/* line 42, sass/partials/_typography.scss */
+/* line 43, sass/partials/_typography.scss */
 
 blockquote {
 	margin: 0 1.5em;
 }
 
-/* line 46, sass/partials/_typography.scss */
+/* line 47, sass/partials/_typography.scss */
 
 address {
 	margin: 0 0 1.5em;
 }
 
-/* line 50, sass/partials/_typography.scss */
+/* line 51, sass/partials/_typography.scss */
 
 pre {
 	font-family: 'Courier 10 Pitch', Courier, monospace;
@@ -299,7 +299,7 @@ pre {
 	font-size: 1.5rem;
 }
 
-/* line 65, sass/partials/_typography.scss */
+/* line 69, sass/partials/_typography.scss */
 
 code,
 kbd,
@@ -308,7 +308,7 @@ var {
 	font: 15px Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 }
 
-/* line 72, sass/partials/_typography.scss */
+/* line 74, sass/partials/_typography.scss */
 
 abbr,
 acronym {
@@ -316,7 +316,7 @@ acronym {
 	border-bottom: 1px dotted #666;
 }
 
-/* line 79, sass/partials/_typography.scss */
+/* line 81, sass/partials/_typography.scss */
 
 mark,
 ins {
@@ -324,7 +324,7 @@ ins {
 	background: #fff9c0;
 }
 
-/* line 86, sass/partials/_typography.scss */
+/* line 88, sass/partials/_typography.scss */
 
 sup,
 sub {
@@ -335,25 +335,25 @@ sub {
 	vertical-align: baseline;
 }
 
-/* line 98, sass/partials/_typography.scss */
+/* line 99, sass/partials/_typography.scss */
 
 sup {
 	bottom: 1ex;
 }
 
-/* line 102, sass/partials/_typography.scss */
+/* line 103, sass/partials/_typography.scss */
 
 sub {
 	top: .5ex;
 }
 
-/* line 106, sass/partials/_typography.scss */
+/* line 107, sass/partials/_typography.scss */
 
 small {
 	font-size: 75%;
 }
 
-/* line 110, sass/partials/_typography.scss */
+/* line 111, sass/partials/_typography.scss */
 
 big {
 	font-size: 125%;
@@ -363,7 +363,7 @@ big {
 Elements
 --------------------------------------------------------------*/
 
-/* line 118, sass/partials/_typography.scss */
+/* line 119, sass/partials/_typography.scss */
 
 hr {
 	height: 1px;
@@ -372,26 +372,26 @@ hr {
 	background-color: #ccc;
 }
 
-/* line 126, sass/partials/_typography.scss */
+/* line 128, sass/partials/_typography.scss */
 
 ul,
 ol {
 	margin: 0 0 1.5em 3em;
 }
 
-/* line 131, sass/partials/_typography.scss */
+/* line 132, sass/partials/_typography.scss */
 
 ul {
 	list-style: disc;
 }
 
-/* line 135, sass/partials/_typography.scss */
+/* line 136, sass/partials/_typography.scss */
 
 ol {
 	list-style: decimal;
 }
 
-/* line 139, sass/partials/_typography.scss */
+/* line 141, sass/partials/_typography.scss */
 
 li > ul,
 li > ol {
@@ -399,39 +399,39 @@ li > ol {
 	margin-left: 1.5em;
 }
 
-/* line 145, sass/partials/_typography.scss */
+/* line 146, sass/partials/_typography.scss */
 
 dt {
 	font-weight: bold;
 }
 
-/* line 149, sass/partials/_typography.scss */
+/* line 150, sass/partials/_typography.scss */
 
 dd {
 	margin: 0 1.5em 1.5em;
 }
 
-/* line 153, sass/partials/_typography.scss */
+/* line 154, sass/partials/_typography.scss */
 
 img {
 	max-width: 100%; /* Adhere to container width. */
 	height: auto; /* Make sure images are scaled correctly. */
 }
 
-/* line 158, sass/partials/_typography.scss */
+/* line 159, sass/partials/_typography.scss */
 
 figure {
 	margin: 0;
 }
 
-/* line 162, sass/partials/_typography.scss */
+/* line 163, sass/partials/_typography.scss */
 
 table {
 	width: 100%;
 	margin: 0 0 1.5em;
 }
 
-/* line 167, sass/partials/_typography.scss */
+/* line 168, sass/partials/_typography.scss */
 
 th {
 	font-weight: bold;
@@ -441,7 +441,7 @@ th {
 Elements
 --------------------------------------------------------------*/
 
-/* line 4, sass/partials/_elements.scss */
+/* line 5, sass/partials/_elements.scss */
 
 hr {
 	height: 1px;
@@ -450,26 +450,26 @@ hr {
 	background-color: #ccc;
 }
 
-/* line 13, sass/partials/_elements.scss */
+/* line 15, sass/partials/_elements.scss */
 
 ul,
 ol {
 	margin: 0 0 1.5em 3em;
 }
 
-/* line 19, sass/partials/_elements.scss */
+/* line 20, sass/partials/_elements.scss */
 
 ul {
 	list-style: disc;
 }
 
-/* line 24, sass/partials/_elements.scss */
+/* line 25, sass/partials/_elements.scss */
 
 ol {
 	list-style: decimal;
 }
 
-/* line 29, sass/partials/_elements.scss */
+/* line 31, sass/partials/_elements.scss */
 
 li > ul,
 li > ol {
@@ -477,39 +477,39 @@ li > ol {
 	margin-left: 1.5em;
 }
 
-/* line 36, sass/partials/_elements.scss */
+/* line 37, sass/partials/_elements.scss */
 
 dt {
 	font-weight: bold;
 }
 
-/* line 41, sass/partials/_elements.scss */
+/* line 42, sass/partials/_elements.scss */
 
 dd {
 	margin: 0 1.5em 1.5em;
 }
 
-/* line 46, sass/partials/_elements.scss */
+/* line 47, sass/partials/_elements.scss */
 
 img {
 	max-width: 100%; /* Adhere to container width. */
 	height: auto; /* Make sure images are scaled correctly. */
 }
 
-/* line 52, sass/partials/_elements.scss */
+/* line 53, sass/partials/_elements.scss */
 
 figure {
 	margin: 0;
 }
 
-/* line 57, sass/partials/_elements.scss */
+/* line 58, sass/partials/_elements.scss */
 
 table {
 	width: 100%;
 	margin: 0 0 1.5em;
 }
 
-/* line 63, sass/partials/_elements.scss */
+/* line 64, sass/partials/_elements.scss */
 
 th {
 	font-weight: bold;
@@ -519,7 +519,7 @@ th {
 Forms
 --------------------------------------------------------------*/
 
-/* line 4, sass/partials/_forms.scss */
+/* line 8, sass/partials/_forms.scss */
 
 button,
 input,
@@ -530,7 +530,7 @@ textarea {
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
 }
 
-/* line 15, sass/partials/_forms.scss */
+/* line 19, sass/partials/_forms.scss */
 
 button,
 input[type='button'],
@@ -552,7 +552,7 @@ input[type='submit'] {
 	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
 }
 
-/* line 38, sass/partials/_forms.scss */
+/* line 42, sass/partials/_forms.scss */
 
 button:hover,
 input[type='button']:hover,
@@ -563,7 +563,7 @@ input[type='submit']:hover {
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
 
-/* line 46, sass/partials/_forms.scss */
+/* line 54, sass/partials/_forms.scss */
 
 button:focus,
 input[type='button']:focus,
@@ -578,14 +578,14 @@ input[type='submit']:active {
 	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* line 58, sass/partials/_forms.scss */
+/* line 60, sass/partials/_forms.scss */
 
 input[type='checkbox'],
 input[type='radio'] {
 	padding: 0; /* Addresses excess padding in IE8/9 */
 }
 
-/* line 63, sass/partials/_forms.scss */
+/* line 64, sass/partials/_forms.scss */
 
 input[type='search'] {
 	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
@@ -594,13 +594,13 @@ input[type='search'] {
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
 }
 
-/* line 71, sass/partials/_forms.scss */
+/* line 72, sass/partials/_forms.scss */
 
 input[type='search']::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
 	-webkit-appearance: none;
 }
 
-/* line 76, sass/partials/_forms.scss */
+/* line 78, sass/partials/_forms.scss */
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -608,7 +608,7 @@ input::-moz-focus-inner {
 	border: 0;
 }
 
-/* line 84, sass/partials/_forms.scss */
+/* line 90, sass/partials/_forms.scss */
 
 input[type='text'],
 input[type='email'],
@@ -621,7 +621,7 @@ textarea {
 	border-radius: 3px;
 }
 
-/* line 95, sass/partials/_forms.scss */
+/* line 101, sass/partials/_forms.scss */
 
 input[type='text']:focus,
 input[type='email']:focus,
@@ -632,7 +632,7 @@ textarea:focus {
 	color: #111;
 }
 
-/* line 104, sass/partials/_forms.scss */
+/* line 109, sass/partials/_forms.scss */
 
 input[type='text'],
 input[type='email'],
@@ -642,7 +642,7 @@ input[type='search'] {
 	padding: 3px;
 }
 
-/* line 112, sass/partials/_forms.scss */
+/* line 113, sass/partials/_forms.scss */
 
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -659,19 +659,19 @@ Navigation
 Links
 --------------------------------------------------------------*/
 
-/* line 8, sass/partials/_navigation.scss */
+/* line 9, sass/partials/_navigation.scss */
 
 a {
 	color: royalblue;
 }
 
-/* line 12, sass/partials/_navigation.scss */
+/* line 13, sass/partials/_navigation.scss */
 
 a:visited {
 	color: purple;
 }
 
-/* line 16, sass/partials/_navigation.scss */
+/* line 19, sass/partials/_navigation.scss */
 
 a:hover,
 a:focus,
@@ -683,7 +683,7 @@ a:active {
 Menus
 --------------------------------------------------------------*/
 
-/* line 26, sass/partials/_navigation.scss */
+/* line 27, sass/partials/_navigation.scss */
 
 .main-navigation {
 	display: block;
@@ -692,7 +692,7 @@ Menus
 	width: 100%;
 }
 
-/* line 34, sass/partials/_navigation.scss */
+/* line 35, sass/partials/_navigation.scss */
 
 .main-navigation ul {
 	margin: 0;
@@ -700,21 +700,21 @@ Menus
 	list-style: none;
 }
 
-/* line 41, sass/partials/_navigation.scss */
+/* line 42, sass/partials/_navigation.scss */
 
 .main-navigation li {
 	position: relative;
 	float: left;
 }
 
-/* line 47, sass/partials/_navigation.scss */
+/* line 48, sass/partials/_navigation.scss */
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
 }
 
-/* line 53, sass/partials/_navigation.scss */
+/* line 54, sass/partials/_navigation.scss */
 
 .main-navigation ul ul {
 	position: absolute;
@@ -726,26 +726,26 @@ Menus
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 64, sass/partials/_navigation.scss */
+/* line 65, sass/partials/_navigation.scss */
 
 .main-navigation ul ul ul {
 	top: 0;
 	left: -999em;
 }
 
-/* line 69, sass/partials/_navigation.scss */
+/* line 70, sass/partials/_navigation.scss */
 
 .main-navigation ul ul a {
 	width: 200px;
 }
 
-/* line 77, sass/partials/_navigation.scss */
+/* line 78, sass/partials/_navigation.scss */
 
 .main-navigation ul li:hover > ul {
 	left: auto;
 }
 
-/* line 81, sass/partials/_navigation.scss */
+/* line 82, sass/partials/_navigation.scss */
 
 .main-navigation ul ul li:hover > ul {
 	left: 100%;
@@ -753,13 +753,13 @@ Menus
 
 /* Small menu */
 
-/* line 87, sass/partials/_navigation.scss */
+/* line 88, sass/partials/_navigation.scss */
 
 .menu-toggle {
 	display: none;
 }
 
-/* line 104, sass/partials/_navigation.scss */
+/* line 107, sass/partials/_navigation.scss */
 
 .site-main .comment-navigation,
 .site-main .paging-navigation,
@@ -768,7 +768,7 @@ Menus
 	margin: 0 0 1.5em;
 }
 
-/* line 112, sass/partials/_navigation.scss */
+/* line 115, sass/partials/_navigation.scss */
 
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
@@ -777,7 +777,7 @@ Menus
 	width: 50%;
 }
 
-/* line 120, sass/partials/_navigation.scss */
+/* line 123, sass/partials/_navigation.scss */
 
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
@@ -793,7 +793,7 @@ Accessibility
 
 /* Text meant only for screen readers */
 
-/* line 5, sass/partials/_accessibility.scss */
+/* line 6, sass/partials/_accessibility.scss */
 
 .screen-reader-text {
 	position: absolute !important;
@@ -803,7 +803,7 @@ Accessibility
 	height: 1px;
 }
 
-/* line 16, sass/partials/_accessibility.scss */
+/* line 19, sass/partials/_accessibility.scss */
 
 .screen-reader-text:hover,
 .screen-reader-text:active,
@@ -832,7 +832,7 @@ Accessibility
 Alignments
 --------------------------------------------------------------*/
 
-/* line 4, sass/partials/_alignments.scss */
+/* line 5, sass/partials/_alignments.scss */
 
 .alignleft {
 	display: inline;
@@ -840,7 +840,7 @@ Alignments
 	margin-right: 1.5em;
 }
 
-/* line 11, sass/partials/_alignments.scss */
+/* line 12, sass/partials/_alignments.scss */
 
 .alignright {
 	display: inline;
@@ -848,7 +848,7 @@ Alignments
 	margin-left: 1.5em;
 }
 
-/* line 18, sass/partials/_alignments.scss */
+/* line 19, sass/partials/_alignments.scss */
 
 .aligncenter {
 	display: block;
@@ -860,7 +860,7 @@ Alignments
 Clearings
 --------------------------------------------------------------*/
 
-/* line 4, sass/partials/_clearings.scss */
+/* line 16, sass/partials/_clearings.scss */
 
 .clear:before,
 .clear:after,
@@ -878,7 +878,7 @@ Clearings
 	content: '';
 }
 
-/* line 22, sass/partials/_clearings.scss */
+/* line 28, sass/partials/_clearings.scss */
 
 .clear:after,
 .entry-content:after,
@@ -893,7 +893,7 @@ Clearings
 Widgets
 --------------------------------------------------------------*/
 
-/* line 4, sass/partials/_widgets.scss */
+/* line 5, sass/partials/_widgets.scss */
 
 .widget {
 	margin: 0 0 1.5em;
@@ -901,7 +901,7 @@ Widgets
 
 /* Make sure select elements fit in widgets */
 
-/* line 10, sass/partials/_widgets.scss */
+/* line 11, sass/partials/_widgets.scss */
 
 .widget select {
 	max-width: 100%;
@@ -909,7 +909,7 @@ Widgets
 
 /* Search widget */
 
-/* line 16, sass/partials/_widgets.scss */
+/* line 17, sass/partials/_widgets.scss */
 
 .widget_search .search-submit {
 	display: none;
@@ -923,27 +923,27 @@ Content
 Posts and pages
 --------------------------------------------------------------*/
 
-/* line 9, sass/partials/_content.scss */
+/* line 10, sass/partials/_content.scss */
 
 .hentry {
 	margin: 0 0 1.5em;
 }
 
-/* line 13, sass/partials/_content.scss */
+/* line 15, sass/partials/_content.scss */
 
 .byline,
 .updated {
 	display: none;
 }
 
-/* line 18, sass/partials/_content.scss */
+/* line 20, sass/partials/_content.scss */
 
 .single .byline,
 .group-blog .byline {
 	display: inline;
 }
 
-/* line 23, sass/partials/_content.scss */
+/* line 26, sass/partials/_content.scss */
 
 .page-content,
 .entry-content,
@@ -951,7 +951,7 @@ Posts and pages
 	margin: 1.5em 0 0;
 }
 
-/* line 29, sass/partials/_content.scss */
+/* line 30, sass/partials/_content.scss */
 
 .page-links {
 	clear: both;
@@ -962,7 +962,7 @@ Posts and pages
 Asides
 --------------------------------------------------------------*/
 
-/* line 39, sass/partials/_content.scss */
+/* line 41, sass/partials/_content.scss */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -973,7 +973,7 @@ Asides
 Comments
 --------------------------------------------------------------*/
 
-/* line 4, sass/partials/_comments.scss */
+/* line 5, sass/partials/_comments.scss */
 
 .comment-content a {
 	word-wrap: break-word;
@@ -985,7 +985,7 @@ Infinite scroll
 
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 
-/* line 5, sass/partials/_infinite-scroll.scss */
+/* line 8, sass/partials/_infinite-scroll.scss */
 
 .infinite-scroll .paging-navigation,
 .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
@@ -994,7 +994,7 @@ Infinite scroll
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 
-/* line 13, sass/partials/_infinite-scroll.scss */
+/* line 14, sass/partials/_infinite-scroll.scss */
 
 .infinity-end.neverending .site-footer {
 	display: block;
@@ -1004,7 +1004,7 @@ Infinite scroll
 Media
 --------------------------------------------------------------*/
 
-/* line 4, sass/partials/_media.scss */
+/* line 7, sass/partials/_media.scss */
 
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
@@ -1017,7 +1017,7 @@ Media
 
 /* Make sure embeds and iframes fit their containers */
 
-/* line 15, sass/partials/_media.scss */
+/* line 18, sass/partials/_media.scss */
 
 embed,
 iframe,
@@ -1029,27 +1029,27 @@ object {
 Captions
 --------------------------------------------------------------*/
 
-/* line 25, sass/partials/_media.scss */
+/* line 26, sass/partials/_media.scss */
 
 .wp-caption {
 	max-width: 100%;
 	margin-bottom: 1.5em;
 }
 
-/* line 30, sass/partials/_media.scss */
+/* line 31, sass/partials/_media.scss */
 
 .wp-caption img[class*='wp-image-'] {
 	display: block;
 	margin: 0 auto;
 }
 
-/* line 36, sass/partials/_media.scss */
+/* line 37, sass/partials/_media.scss */
 
 .wp-caption-text {
 	text-align: center;
 }
 
-/* line 40, sass/partials/_media.scss */
+/* line 41, sass/partials/_media.scss */
 
 .wp-caption .wp-caption-text {
 	margin: .8075em 0;
@@ -1059,13 +1059,13 @@ Captions
 Galleries
 --------------------------------------------------------------*/
 
-/* line 48, sass/partials/_media.scss */
+/* line 49, sass/partials/_media.scss */
 
 .gallery {
 	margin-bottom: 1.5em;
 }
 
-/* line 52, sass/partials/_media.scss */
+/* line 53, sass/partials/_media.scss */
 
 .gallery-item {
 	display: inline-block;
@@ -1074,49 +1074,49 @@ Galleries
 	vertical-align: top;
 }
 
-/* line 61, sass/partials/_media.scss */
+/* line 62, sass/partials/_media.scss */
 
 .gallery-columns-2 .gallery-item {
 	max-width: 50%;
 }
 
-/* line 65, sass/partials/_media.scss */
+/* line 66, sass/partials/_media.scss */
 
 .gallery-columns-3 .gallery-item {
 	max-width: 33.33%;
 }
 
-/* line 69, sass/partials/_media.scss */
+/* line 70, sass/partials/_media.scss */
 
 .gallery-columns-4 .gallery-item {
 	max-width: 25%;
 }
 
-/* line 73, sass/partials/_media.scss */
+/* line 74, sass/partials/_media.scss */
 
 .gallery-columns-5 .gallery-item {
 	max-width: 20%;
 }
 
-/* line 77, sass/partials/_media.scss */
+/* line 78, sass/partials/_media.scss */
 
 .gallery-columns-6 .gallery-item {
 	max-width: 16.66%;
 }
 
-/* line 81, sass/partials/_media.scss */
+/* line 82, sass/partials/_media.scss */
 
 .gallery-columns-7 .gallery-item {
 	max-width: 14.28%;
 }
 
-/* line 85, sass/partials/_media.scss */
+/* line 86, sass/partials/_media.scss */
 
 .gallery-columns-8 .gallery-item {
 	max-width: 12.5%;
 }
 
-/* line 89, sass/partials/_media.scss */
+/* line 90, sass/partials/_media.scss */
 
 .gallery-columns-9 .gallery-item {
 	max-width: 11.11%;
@@ -1124,14 +1124,14 @@ Galleries
 
 @media screen and (max-width: 600px) {
 
-/* line 93, sass/partials/_navigation.scss */
+/* line 95, sass/partials/_navigation.scss */
 
 .menu-toggle,
 .main-navigation.toggled .nav-menu {
 	display: block;
 }
 
-/* line 99, sass/partials/_navigation.scss */
+/* line 100, sass/partials/_navigation.scss */
 
 .main-navigation ul {
 	display: none;

@@ -76,14 +76,14 @@
 // Media Queries
 @mixin breakpoint($point) {
 	@if $point == desktop {
-		@media screen and (max-width: 1140px) { @content; }
+		@media screen and (min-width: 1140px) { @content; }
 	}
 
 	@else if $point == tablet {
-		@media screen and (max-width: 800px) { @content; }
+		@media screen and (min-width: 800px) { @content; }
 	}
 
 	@else if $point == phone {
-		@media screen and (max-width: 480px)  { @content; }
+		@media screen and (min-width: 480px)  { @content; }
 	}
 }
