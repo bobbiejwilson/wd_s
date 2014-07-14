@@ -155,7 +155,7 @@ module.exports = function(grunt) {
 
 	});
 
-	grunt.registerTask('styles', ['csscomb', 'sass', 'autoprefixer', 'cmq', 'cssmin']);
+	grunt.registerTask('styles', ['sass', 'autoprefixer', 'cmq', 'csscomb', 'cssmin']);
 	grunt.registerTask('javascript', ['concat', 'uglify']);
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
 	grunt.registerTask('default', ['update_submodules', 'styles', 'javascript', 'imageminnewer']);
