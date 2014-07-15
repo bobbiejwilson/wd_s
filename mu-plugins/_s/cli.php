@@ -1,13 +1,13 @@
 <?php
 /*
-Plugin Name: CLI
-Plugin URI: http://webdevstudios.com
-Description: Adds WP-CLI commands.
-Author: WebDevStudios
-Author URI: http://webdevstudios.com
-Version: 1.0.0
-License: GPLv2
-*/
+ * Plugin Name: _s - CLI
+ * Plugin URI: http://webdevstudios.com
+ * Description: Adds WP-CLI commands to _s.
+ * Author: WebDevStudios
+ * Author URI: http://webdevstudios.com
+ * Version: 1.0.0
+ * License: GPLv2
+ */
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
