@@ -26,3 +26,6 @@
 [submodule "plugins/debug-bar"]
 	path = plugins/debug-bar
 	url = git@github.com:wp-plugins/debug-bar.git
+[submodule "themes/_s"]
+	path = themes/_s
+	url = git@github.com:WebDevStudios/_s.git
