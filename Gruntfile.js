@@ -138,6 +138,52 @@ module.exports = function(grunt) {
 			css: ['themes/_s/style.css', 'themes/_s/style.min.css']
 		},
 
+		makepot: {
+			theme: {
+				options: {
+					cwd: 'themes/_s'
+					domainPath: '/languages/',
+					potFilename: '_s.pot',
+					type: 'wp-theme'
+				}
+			}
+			/*plugin_name: {
+				options: {
+					cwd: 'plugins/plugin_name',
+					domainPath: '/languages/',
+					potFilename: 'plugin_name.pot',
+					type: 'wp-plugin'
+				}
+			}
+			repeat as necessary
+			*/
+		},
+
+		addtextdomain: {
+			theme: {
+				options: {
+					textdomain: '_s'
+				},
+				target: {
+					files: {
+						src: ['*.php']
+					}
+				}
+			},
+			/*plugin_name: {
+				options: {
+					textdomain: 'text-domain'
+				},
+				target: {
+					files: {
+						src: ['*.php']
+					}
+				}
+			}
+			repeat as necessary
+			*/
+		},
+
 		update_submodules: {
 
 			default: {
