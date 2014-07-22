@@ -138,7 +138,7 @@ module.exports = function(grunt) {
 			css: ['themes/_s/style.css', 'themes/_s/style.min.css']
 		},
 
-		'update_submodules': {
+		update_submodules: {
 
 			default: {
 				options: {
