@@ -36,6 +36,7 @@
     "grunt-shell": "~0.7.0",
     "grunt-newer": "~0.7.0",
     "load-grunt-tasks": "~0.5.0",
-    "grunt-update-submodules": "~0.4.1"
+    "grunt-update-submodules": "~0.4.1",
+    "grunt-wp-i18n": "~0.4.5"
   }
 }
