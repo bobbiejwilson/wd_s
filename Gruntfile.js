@@ -141,8 +141,8 @@ module.exports = function(grunt) {
 		makepot: {
 			theme: {
 				options: {
-					cwd: 'themes/_s',
-					domainPath: '/languages/',
+					cwd: 'themes/_s/',
+					domainPath: 'languages/',
 					potFilename: '_s.pot',
 					type: 'wp-theme'
 				}
