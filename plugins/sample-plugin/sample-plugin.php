@@ -82,8 +82,8 @@ if ( ! class_exists( 'Sample_Plugin' ) ) {
 	    public function do_hooks() {
 
 		    if( $this->meets_requirements() ) {
-			    add_action( 'init', array( $this, 'register_post_types' ), 1 );
-			    add_action( 'init', array( $this, 'register_taxonomies' ), 1 );
+			    add_action( 'init', array( $this, 'register_post_types' ), 9 );
+			    add_action( 'init', array( $this, 'register_taxonomies' ), 9 );
 		    }
 
 	    } /* do_hooks() */
