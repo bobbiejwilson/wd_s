@@ -19,6 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 require_once 'cpt_core/CPT_Core.php';
 require_once 'taxonomy_core/Taxonomy_Core.php';
+require_once 'wds_required_plugins/wds_required_plugins.php';
 
 /**
  * Require project specific files
