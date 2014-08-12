@@ -24,16 +24,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 class _S_Admin {
 
-	/**
-	 * Array of required plugins for the _S project.
-	 *
-	 * @var array
-	 */
-	public static $required_plugins = array(
-		'jetpack/jetpack.php',
-		'sample-plugin/sample-plugin.php'
-	);
-
 	// A single instance of this class.
 	public static $instance         = null;
 	public static $key              = '_s';
@@ -65,8 +55,6 @@ class _S_Admin {
 
 		add_action( 'admin_init', array( $this, 'init' ) );
 		add_action( 'admin_menu', array( $this, 'add_page' ) );
-
-		add_filter( 'plugin_action_links', array( $this, 'filter_plugin_links' ), 10, 4 );
 	}
 
 	/**
@@ -156,33 +144,6 @@ class _S_Admin {
     }
 
 	/**
-	 * Remove the deactivation link for all custom/required plugins
-	 *
-	 * @since 1.0.0
-	 *
-	 * @param $actions
-	 * @param $plugin_file
-	 * @param $plugin_data
-	 * @param $context
-	 *
-	 * @return array
-	 */
-	public function filter_plugin_links( $actions = array(), $plugin_file = '', $plugin_data = '', $context = '' ) {
-		// Remove edit link for all plugins
-		if( array_key_exists( 'edit', $actions ) ) {
-			unset( $actions['edit'] );
-		}
-
-		// Remove deactivate link for custom/required plugins
-		if( array_key_exists( 'deactivate', $actions ) && in_array( $plugin_file, $this->get_required_plugins() ) ) {
-			$actions['deactivate'] = sprintf( '<span style="color: #888">%s</span>', __( 'WDS Required Plugin', '_s' ) );
-		}
-
-		return $actions;
-	}
-
-
-	/**
 	 * Get the plugins that are required for the project. This will be all plugins that are prefix with the project
 	 * key, and then any additional plugins defined in the $required_plugins static variable.
 	 *
@@ -205,9 +166,7 @@ class _S_Admin {
 
 }
 
-
-$_S_Admin = new _S_Admin();
-
+$GLOBALS['_s_admin'] = new _S_Admin();
 
 /**
  * Wrapper function around cmb_get_option

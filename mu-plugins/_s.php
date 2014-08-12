@@ -24,6 +24,7 @@ require_once 'taxonomy_core/Taxonomy_Core.php';
  * Require project specific files
  */
 require_once '_s/admin.php';
+require_once '_s/required-plugins.php';
 require_once '_s/cli.php';
 
 /**
