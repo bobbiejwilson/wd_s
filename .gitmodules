@@ -29,3 +29,6 @@
 [submodule "themes/_s"]
 	path = themes/_s
 	url = git@github.com:WebDevStudios/_s.git
+[submodule "mu-plugins/WDS-Required-Plugins"]
+	path = mu-plugins/wds_required_plugins
+	url = git@github.com:WebDevStudios/WDS-Required-Plugins.git
