@@ -143,27 +143,6 @@ class _S_Admin {
         return self::$key;
     }
 
-	/**
-	 * Get the plugins that are required for the project. This will be all plugins that are prefix with the project
-	 * key, and then any additional plugins defined in the $required_plugins static variable.
-	 *
-	 * @since  1.0.0
-	 *
-	 * @return array
-	 */
-	public function get_required_plugins() {
-		$required_plugins = self::$required_plugins;
-		$plugins = get_option( 'active_plugins' );
-
-		foreach( $plugins as $plugin ) {
-			if( false !== stripos( $plugin, $this->key(), 0 ) ) {
-				$required_plugins[] = $plugin;
-			}
-		}
-
-		return $required_plugins;
-	}
-
 }
 
 $GLOBALS['_s_admin'] = new _S_Admin();
