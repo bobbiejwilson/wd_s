@@ -24,16 +24,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 class _S_Required_Plugins {
 
 	/**
-	 * Array of required plugins for the _S project.
-	 *
-	 * @var array
-	 */
-	public static $required_plugins = array(
-		'jetpack/jetpack.php',
-		'sample-plugin/sample-plugin.php'
-	);
-
-	/**
 	 * Initiate our hooks
 	 *
 	 * @since 1.0.0
@@ -78,7 +68,7 @@ class _S_Required_Plugins {
 	 * @return array
 	 */
 	public function get_required_plugins() {
-		$required_plugins = self::$required_plugins;
+		$required_plugins = array();
 		$plugins = get_option( 'active_plugins' );
 
 		foreach( $plugins as $plugin ) {
@@ -87,7 +77,7 @@ class _S_Required_Plugins {
 			}
 		}
 
-		return $required_plugins;
+		return (array) apply_filters( 'wds_required_plugins', $required_plugins );
 	}
 
 }
