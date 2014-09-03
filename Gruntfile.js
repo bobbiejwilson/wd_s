@@ -70,7 +70,7 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					'themes/_s/js/concat/*.js'
+					'themes/_s/js/partials/*.js'
 				],
 				dest: 'themes/_s/js/project.js',
 			}
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: 'themes/_s/js/',
-					src: ['**/*.js', '!**/*.min.js', '!concat/*.js'],
+					src: ['**/*.js', '!**/*.min.js', '!partials/*.js'],
 					dest: 'themes/_s/js/',
 					ext: '.min.js'
 				}]
