@@ -29,6 +29,7 @@ module.exports = function(grunt) {
 				options: {
 					style: 'expanded',
 					lineNumbers: true,
+					loadPath: require('node-neat').includePaths
 				},
 				files: {
 					'themes/_s/style.css': 'themes/_s/sass/style.scss'
