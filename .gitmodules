@@ -1,7 +1,7 @@
-[submodule "mu-plugins/cmb"]
-	path = mu-plugins/cmb
-	url = git@github.com:WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress.git
-	branch = trunk
+[submodule "mu-plugins/cmb2"]
+	path = mu-plugins/cmb2
+	url = git@github.com:WebDevStudios/CMB2.git
+	branch = master
 [submodule "mu-plugins/taxonomy_core"]
 	path = mu-plugins/taxonomy_core
 	url = git@github.com:jtsternberg/Taxonomy_Core.git
