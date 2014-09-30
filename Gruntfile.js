@@ -13,6 +13,16 @@ module.exports = function(grunt) {
 			}
 		},
 
+		sprite: {
+			all: {
+				'src': 'themes/_s/images/sprites/*.png',
+				'destImg': 'themes/_s/images/sprites.png',
+				'destCSS': 'themes/_s/sass/partials/_sprites.scss',
+				'imgPath': 'images/sprites.png',
+				'algorithm': 'binary-tree',
+			}
+		},
+
 		csscomb: {
 			dist: {
 				files: [{
@@ -118,8 +128,17 @@ module.exports = function(grunt) {
 			},
 
 			css: {
-				files: ['themes/_s/sass/partials/*.scss'],
+				files: ['themes/_s/sass/**/*.scss'],
 				tasks: ['styles', 'shell:grunt'],
+				options: {
+					spawn: false,
+					livereload: true,
+				},
+			},
+
+			sprite: {
+				files: ['themes/_s/images/sprites/*.png'],
+				tasks: ['sprite', 'styles', 'shell:grunt'],
 				options: {
 					spawn: false,
 					livereload: true,
