@@ -217,7 +217,21 @@ module.exports = function(grunt) {
 				}
 			},
 
-		}
+		},
+
+		// check your php
+		phpcs: {
+			application: {
+				dir: [
+					'**/*.php',
+					'!**/node_modules/**'
+				]
+			},
+			options: {
+				bin: '~/phpcs/scripts/phpcs',
+				standard: 'WordPress'
+			}
+		},
 
 	});
 
