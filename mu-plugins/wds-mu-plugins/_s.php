@@ -18,6 +18,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Required Libraries
  */
 require_once WPMU_PLUGIN_DIR . '/cmb2/init.php';
-require_once WPMU_PLUGIN_DIR . '/cpt_core/CPT_Core.php';
-require_once WPMU_PLUGIN_DIR . '/taxonomy_core/Taxonomy_Core.php';
-require_once WPMU_PLUGIN_DIR . '/wds_required_plugins/wds_required_plugins.php';
+require_once WPMU_PLUGIN_DIR . '/cpt-core/CPT_Core.php';
+require_once WPMU_PLUGIN_DIR . '/taxonomy-core/Taxonomy_Core.php';
+require_once WPMU_PLUGIN_DIR . '/wds-required-plugins/wds-required-plugins.php';

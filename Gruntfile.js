@@ -39,7 +39,8 @@ module.exports = function(grunt) {
 				options: {
 					style: 'expanded',
 					lineNumbers: true,
-					loadPath: require('node-neat').includePaths
+					loadPath: require('node-neat').includePaths,
+					source map: none
 				},
 				files: {
 					'themes/_s/style.css': 'themes/_s/sass/style.scss'
@@ -219,7 +220,6 @@ module.exports = function(grunt) {
 
 		},
 
-		// check your php
 		phpcs: {
 			application: {
 				dir: [
