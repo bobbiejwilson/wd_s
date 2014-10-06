@@ -10,17 +10,21 @@ function get_wds_mu_plugins() {
 	$wds_mu_dir = WPMU_PLUGIN_DIR . '/wds-mu-plugins';
 
 	$mu_plugins = array();
-	if ( !is_dir( $wds_mu_dir ) ) {
+
+	if ( ! is_dir( $wds_mu_dir ) ) {
 		return $mu_plugins;
 	}
+
 	if ( ! $dh = opendir( $wds_mu_dir ) ) {
 		return $mu_plugins;
 	}
+
 	while ( ( $plugin = readdir( $dh ) ) !== false ) {
 		if ( substr( $plugin, -4 ) == '.php' ) {
 			$mu_plugins[] = $wds_mu_dir . '/' . $plugin;
 		}
 	}
+
 	closedir( $dh );
 	sort( $mu_plugins );
 
