@@ -1,34 +1,25 @@
 [submodule "mu-plugins/taxonomy_core"]
 	path = mu-plugins/taxonomy_core
-	url = git@github.com:jtsternberg/Taxonomy_Core.git
+	url = https://github.com/WebDevStudios/Taxonomy_Core.git
 [submodule "mu-plugins/cpt_core"]
 	path = mu-plugins/cpt_core
-	url = git@github.com:jtsternberg/CPT_Core.git
+	url = https://github.com/WebDevStudios/CPT_Core.git
 [submodule "plugins/transients-manager"]
 	path = plugins/transients-manager
-	url = git@github.com:pippinsplugins/Transients-Manager.git
+	url = https://github.com/pippinsplugins/Transients-Manager.git
 [submodule "plugins/jetpack"]
 	path = plugins/jetpack
-	url = git@github.com:Automattic/jetpack.git
-[submodule "plugins/theme-check"]
-	path = plugins/theme-check
-	url = git@github.com:Pross/theme-check.git
+	url = https://github.com/Automattic/jetpack.git
 [submodule "plugins/query-monitor"]
 	path = plugins/query-monitor
-	url = git@github.com:johnbillion/query-monitor.git
-[submodule "plugins/debug-bar-console"]
-	path = plugins/debug-bar-console
-	url = git@github.com:wp-plugins/debug-bar-console.git
-[submodule "plugins/debug-bar"]
-	path = plugins/debug-bar
-	url = git@github.com:wp-plugins/debug-bar.git
+	url = https://github.com/johnbillion/query-monitor.git
 [submodule "themes/_s"]
 	path = themes/_s
-	url = git@github.com:WebDevStudios/_s.git
+	url = https://github.com/WebDevStudios/_s.git
 [submodule "mu-plugins/WDS-Required-Plugins"]
-	path = mu-plugins/wds_required_plugins
-	url = git@github.com:WebDevStudios/WDS-Required-Plugins.git
-[submodule "mu-plugins/cmb"]
-	path = mu-plugins/cmb
-	url = git@github.com:WebDevStudios/CMB2.git
+	path = mu-plugins/wds-required-plugins
+	url = https://github.com/WebDevStudios/WDS-Required-Plugins.git
+[submodule "mu-plugins/cmb2"]
+	path = mu-plugins/cmb2
+	url=https://github.com/WebDevStudios/CMB2.git
 	branch = master
