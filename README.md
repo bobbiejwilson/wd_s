@@ -5,10 +5,10 @@ Our new project boilerplate.
 
 ### Includes
 
-* _s (fork)        ([automattic](https://github.com/WebDevStudios/_s))
+* Underscores      ([webdevstudios](https://github.com/WebDevStudios/_s))
 * CMB2             ([webdevstudios](https://github.com/WebDevStudios/CMB2))
-* Taxonomy Core    ([jtsternberg](https://github.com/jtsternberg/Taxonomy_core))
-* CPT Core         ([jtsternberg](https://github.com/jtsternberg/CPT_Core))
+* Taxonomy Core    ([webdevstudios](https://github.com/WebDevStudios/Taxonomy_core))
+* CPT Core         ([webdevstudios](https://github.com/WebDevStudios/CPT_Core))
 
 
 ### Installation
