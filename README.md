@@ -1,20 +1,17 @@
 wd_s
 ====
 
-A new project boilerplate.
+Our new project boilerplate.
 
 ### Includes
 
-* _s (Sass fork)     ([automattic](https://github.com/Automattic/_s), [gregrickaby](https://github.com/gregrickaby/_s/tree/sass))
-* CMB                ([webdevstudios](https://github.com/WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress))
-* Taxonomy Core      ([jtsternberg](https://github.com/jtsternberg/Taxonomy_core))
-* CPT Core           ([jtsternberg](https://github.com/jtsternberg/CPT_Core))
-* Basic MU Plugin
-* Sample Class-based Plugin
+* _s (fork)        ([automattic](https://github.com/WebDevStudios/_s))
+* CMB2             ([webdevstudios](https://github.com/WebDevStudios/CMB2))
+* Taxonomy Core    ([jtsternberg](https://github.com/jtsternberg/Taxonomy_core))
+* CPT Core         ([jtsternberg](https://github.com/jtsternberg/CPT_Core))
 
 
-### Installation 
-
+### Installation
 
 #### Use Yeoman
 
@@ -22,10 +19,10 @@ A new project boilerplate.
 
 `yo wd-s` - In the wp-content folder of a new project, follow the prompts and a new magically created wd_s install with your project name in it's place!
 
-	
+
 #### Clone
 
-**You'll need to clone recursive this repo, not download the zip!** (It includes other Github submodules and they won't be included in the zip)
+**You'll need to clone recursive this repo, not download the zip!** (It includes ubmodules and they won't be included in the zip)
 
 * Via command line / Terminal:
  
@@ -48,9 +45,6 @@ You'll need to change all instances of the names: `_s`.
    * (with a space before it) to capture DocBlocks.
 * Search for: `_s-` and replace with: `project-name-`
   * to capture prefixed handles
-* Search for `_S_` and replace with: `Project_Name_`
-  * to capture class names
-  
   
 Compiling with Grunt (via Command Line)
 ----
