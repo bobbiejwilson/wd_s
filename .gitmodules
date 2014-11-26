@@ -2,22 +2,10 @@
 	path = mu-plugins/cmb2
 	url = https://github.com/WebDevStudios/CMB2.git
 	branch = master
-[submodule "mu-plugins/wds-required-plugins"]
-	path = mu-plugins/wds-required-plugins
-	url = https://github.com/WebDevStudios/WDS-Required-Plugins.git
 [submodule "themes/_s"]
 	path = themes/_s
 	url = https://github.com/WebDevStudios/_s.git
 	branch = sass
-[submodule "plugins/query-monitor"]
-	path = plugins/query-monitor
-	url = https://github.com/johnbillion/query-monitor.git
-[submodule "plugins/jetpack"]
-	path = plugins/jetpack
-	url = https://github.com/Automattic/jetpack.git
-[submodule "plugins/transients-manager"]
-	path = plugins/transients-manager
-	url = https://github.com/pippinsplugins/Transients-Manager.git
 [submodule "mu-plugins/cpt-core"]
 	path = mu-plugins/cpt-core
 	url = https://github.com/WebDevStudios/CPT_Core.git
