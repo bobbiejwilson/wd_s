@@ -19,9 +19,6 @@
 [submodule "plugins/jetpack"]
 	path = plugins/jetpack
 	url = https://github.com/Automattic/jetpack.git
-[submodule "plugins/theme-check"]
-	path = plugins/theme-check
-	url = https://github.com/Otto42/theme-check.git
 [submodule "plugins/regenerate-thumbnails"]
 	path = plugins/regenerate-thumbnails
 	url = https://github.com/Viper007Bond/regenerate-thumbnails.git
