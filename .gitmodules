@@ -1,0 +1,27 @@
+[submodule "mu-plugins/cmb2"]
+	path = mu-plugins/cmb2
+	url = https://github.com/WebDevStudios/CMB2.git
+[submodule "themes/_s"]
+	path = themes/_s
+	url = https://github.com/WebDevStudios/_s.git
+[submodule "mu-plugins/taxonomy-core"]
+	path = mu-plugins/taxonomy-core
+	url = https://github.com/WebDevStudios/Taxonomy_Core.git
+[submodule "mu-plugins/cpt-core"]
+	path = mu-plugins/cpt-core
+	url = https://github.com/WebDevStudios/CPT_Core.git
+[submodule "mu-plugins/wds-required-plugins"]
+	path = mu-plugins/wds-required-plugins
+	url = https://github.com/WebDevStudios/WDS-Required-Plugins.git
+[submodule "plugins/wp-debug-bar"]
+	path = plugins/wp-debug-bar
+	url = https://github.com/brandwaffle/wp-debug-bar
+[submodule "plugins/jetpack"]
+	path = plugins/jetpack
+	url = https://github.com/Automattic/jetpack.git
+[submodule "plugins/theme-check"]
+	path = plugins/theme-check
+	url = https://github.com/Otto42/theme-check.git
+[submodule "plugins/regenerate-thumbnails"]
+	path = plugins/regenerate-thumbnails
+	url = https://github.com/Viper007Bond/regenerate-thumbnails.git
