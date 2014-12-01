@@ -1,7 +1,0 @@
-[submodule "themes/_s"]
-	path = themes/_s
-	url = https://github.com/WebDevStudios/_s.git
-	branch = sass
-[submodule "plugins/debug-bar"]
-	path = plugins/debug-bar
-	url = https://github.com/brandwaffle/wp-debug-bar.git
