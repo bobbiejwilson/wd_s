@@ -1,15 +1,20 @@
 wd_s
 ====
 
-Our new project boilerplate.
+WebDevStudios new project boilerplate.
 
-### Includes
+### Includes the following Submodules
 
-* Underscores      ([webdevstudios](https://github.com/WebDevStudios/_s))
-* CMB2             ([webdevstudios](https://github.com/WebDevStudios/CMB2))
-* Taxonomy Core    ([webdevstudios](https://github.com/WebDevStudios/Taxonomy_core))
-* CPT Core         ([webdevstudios](https://github.com/WebDevStudios/CPT_Core))
-
+* WDS Underscores ([webdevstudios](https://github.com/WebDevStudios/_s))
+* CMB2
+* CPT Core
+* Taxonomy Core
+* WDS Required Plugins
+* Debug Bar
+* Jetpack
+* Regenerate Thumbnails
+* Theme Check
+* WDS TLC Transients
 
 ### Installation
 
@@ -25,11 +30,11 @@ Our new project boilerplate.
 **You'll need to clone recursive this repo, not download the zip!** (It includes ubmodules and they won't be included in the zip)
 
 * Via command line / Terminal:
- 
+
   `git clone --recursive git@github.com:WebDevStudios/wd_s.git`
 
 * Via SourceTree/Tower:
-  
+
   Clone normally, but select "Recurse submodules"
 
 ### Getting Started
@@ -45,7 +50,7 @@ You'll need to change all instances of the names: `_s`.
    * (with a space before it) to capture DocBlocks.
 * Search for: `_s-` and replace with: `project-name-`
   * to capture prefixed handles
-  
+
 Compiling with Grunt (via Command Line)
 ----
 
