@@ -1,17 +1,7 @@
-[submodule "mu-plugins/cmb2"]
-	path = mu-plugins/cmb2
-	url = https://github.com/WebDevStudios/CMB2.git
-	branch = master
 [submodule "themes/_s"]
 	path = themes/_s
 	url = https://github.com/WebDevStudios/_s.git
 	branch = sass
-[submodule "mu-plugins/cpt-core"]
-	path = mu-plugins/cpt-core
-	url = https://github.com/WebDevStudios/CPT_Core.git
-[submodule "mu-plugins/taxonomy-core"]
-	path = mu-plugins/taxonomy-core
-	url = https://github.com/WebDevStudios/Taxonomy_Core.git
 [submodule "plugins/debug-bar"]
 	path = plugins/debug-bar
 	url = https://github.com/brandwaffle/wp-debug-bar.git
