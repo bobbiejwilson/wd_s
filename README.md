@@ -60,6 +60,6 @@ Compiling with Grunt (via Command Line)
 
 `grunt watch` - Automatically handle changes to javascript and css files.
 
-`grunt imageminnewer` - Minify images
+`grunt imageminnewer` - Minify images.
 
 `grunt` - Do it all once!
