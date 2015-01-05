@@ -39,6 +39,9 @@ WebDevStudios new project boilerplate.
 
 ### Getting Started
 
+* Run `npm install` to install Grunt and it's dependencies
+* Run `bower install` to install all framework dependencies
+
 You'll need to change all instances of the names: `_s`.
 
 * Search for: `'_s'` and replace with: `'project-name'`

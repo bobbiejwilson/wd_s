@@ -39,8 +39,10 @@ module.exports = function(grunt) {
 				options: {
 					style: 'expanded',
 					lineNumbers: true,
-					loadPath: require('node-neat').includePaths,
-					sourceMap: false,
+					loadPath: [
+						'bower_components/bourbon/app/assets/stylesheets',
+						'bower_components/neat/app/assets/stylesheets'
+					]
 				},
 				files: {
 					'themes/_s/style.css': 'themes/_s/sass/style.scss'
@@ -110,11 +112,6 @@ module.exports = function(grunt) {
 					src: ['**/*.{png,jpg,gif}'],
 					dest: 'themes/_s/images/'
 				}]
-			}
-		},
-
-		update_submodules: {
-			dist: {
 			}
 		},
 
