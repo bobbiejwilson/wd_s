@@ -1,29 +1,36 @@
 wd_s
 ====
 
-WebDevStudios new project boilerplate.
+A project boilerplate for WebDevStudios.
 
 ### Includes the following Submodules
 
-* WDS Underscores ([webdevstudios](https://github.com/WebDevStudios/_s))
-* CMB2
-* CPT Core
-* Taxonomy Core
-* WDS Required Plugins
-* Debug Bar
-* Jetpack
-* Regenerate Thumbnails
-* Theme Check
-* WDS TLC Transients
+* [WDS Underscores](https://github.com/WebDevStudios/_s)
+* [CMB2](https://github.com/WebDevStudios/CMB2)
+* [CPT Core](https://github.com/WebDevStudios/CPT_Core)
+* [Taxonomy Core](https://github.com/WebDevStudios/Taxonomy_Core)
+* [WDS Required Plugins](https://github.com/WebDevStudios/WDS-Required-Plugins)
+* [Debug Bar](https://github.com/brandwaffle/wp-debug-bar.git)
+* [Jetpack](https://github.com/Automattic/jetpack)
+* [Regenerate Thumbnails](https://github.com/Viper007Bond/regenerate-thumbnails)
+* [WDS TLC Transients](https://github.com/WebDevStudios/WDS-TLC-Transients)
+* [Bourbon](https://github.com/thoughtbot/bourbon)
+* [Neat](https://github.com/thoughtbot/neat)
 
-### Installation
+### Automagic Installation
+
+The easiest way to get started is by using Yeoman. Otherwise, you can manually clone this repo and set this up by hand.
 
 #### Use Yeoman
 
-`npm install -g yo generator-wd-s` - Install [Yeoman](http://yeoman.io/) and the wd_s generator
+`npm install -g yo generator-wd-s` - Install [Yeoman](http://yeoman.io/) and use the wd_s generator
 
 `yo wd-s` - In the wp-content folder of a new project, follow the prompts and a new magically created wd_s install with your project name in it's place!
 
+#### Install Grunt and Dependencies
+* Run `npm install && bower install ` from the command line to install Grunt and dependencies.
+
+## Manual Installation
 
 #### Clone
 
@@ -37,10 +44,7 @@ WebDevStudios new project boilerplate.
 
   Clone normally, but select "Recurse submodules"
 
-### Getting Started
-
-* Run `npm install` to install Grunt and it's dependencies
-* Run `bower install` to install all framework dependencies
+#### Find & Replace
 
 You'll need to change all instances of the names: `_s`.
 
@@ -54,8 +58,10 @@ You'll need to change all instances of the names: `_s`.
 * Search for: `_s-` and replace with: `project-name-`
   * to capture prefixed handles
 
-Compiling with Grunt (via Command Line)
-----
+#### Install Grunt and Dependencies
+* Run `npm install && bower install ` from the command line to install Grunt and dependencies.
+
+## Grunt Tasks
 
 `grunt javascript` - Concatenate and minify javascript files.
 
