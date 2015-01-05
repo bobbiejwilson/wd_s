@@ -15,7 +15,7 @@
 	url = https://github.com/WebDevStudios/_s.git
 [submodule "plugins/debug-bar"]
 	path = plugins/debug-bar
-	url = https://github.com/brandwaffle/wp-debug-bar
+	url = https://github.com/brandwaffle/wp-debug-bar.git
 [submodule "plugins/jetpack"]
 	path = plugins/jetpack
 	url = https://github.com/Automattic/jetpack.git

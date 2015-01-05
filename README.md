@@ -27,7 +27,7 @@ WebDevStudios new project boilerplate.
 
 #### Clone
 
-**You'll need to clone recursive this repo, not download the zip!** (It includes ubmodules and they won't be included in the zip)
+**You'll need to clone recursive this repo, not download the zip!** (It includes submodules and they won't be included in the zip)
 
 * Via command line / Terminal:
 
@@ -63,6 +63,6 @@ Compiling with Grunt (via Command Line)
 
 `grunt watch` - Automatically handle changes to javascript and css files.
 
-`grunt imageminnewer` - Minify images
+`grunt imageminnewer` - Minify images.
 
 `grunt` - Do it all once!
