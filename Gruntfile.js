@@ -119,7 +119,7 @@ module.exports = function(grunt) {
 
 			scripts: {
 				files: ['themes/_s/js/**/*.js'],
-				tasks: ['javascript', 'shell:grunt'],
+				tasks: ['javascript'],
 				options: {
 					spawn: false,
 				},
@@ -127,7 +127,7 @@ module.exports = function(grunt) {
 
 			css: {
 				files: ['themes/_s/sass/**/*.scss'],
-				tasks: ['styles', 'shell:grunt'],
+				tasks: ['styles'],
 				options: {
 					spawn: false,
 					livereload: true,
@@ -136,7 +136,7 @@ module.exports = function(grunt) {
 
 			sprite: {
 				files: ['themes/_s/images/sprites/*.png'],
-				tasks: ['sprite', 'styles', 'shell:grunt'],
+				tasks: ['sprite', 'styles'],
 				options: {
 					spawn: false,
 					livereload: true,
@@ -147,7 +147,7 @@ module.exports = function(grunt) {
 
 		shell: {
 			grunt: {
-				command: 'afplay grunt.mp3'
+				command: '',
 			}
 		},
 
