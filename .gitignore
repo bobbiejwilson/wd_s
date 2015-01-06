@@ -6,6 +6,7 @@ cache/
 backups/
 bower_components/
 node_modules/
+.idea/
 
 .htaccess
 .sass-cache
