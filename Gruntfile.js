@@ -83,7 +83,7 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					'themes/_s/js/partials/*.js'
+					'themes/_s/js/concat/*.js'
 				],
 				dest: 'themes/_s/js/project.js',
 			}
