@@ -10,6 +10,7 @@ A project boilerplate for WebDevStudios.
 * [CPT Core](https://github.com/WebDevStudios/CPT_Core)
 * [Taxonomy Core](https://github.com/WebDevStudios/Taxonomy_Core)
 * [WDS Required Plugins](https://github.com/WebDevStudios/WDS-Required-Plugins)
+* [WDS Widget Boilerplate](https://github.com/WebDevStudios/WDS-Widget-Boilerplate)
 * [Debug Bar](https://github.com/brandwaffle/wp-debug-bar.git)
 * [Jetpack](https://github.com/Automattic/jetpack)
 * [Regenerate Thumbnails](https://github.com/Viper007Bond/regenerate-thumbnails)
