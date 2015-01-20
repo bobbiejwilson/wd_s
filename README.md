@@ -64,11 +64,11 @@ You'll need to change all instances of the names: `_s`.
 
 ## Grunt Tasks
 
+`grunt watch` - Automatically handle changes to CSS, javascript, and image sprites.
+
 `grunt javascript` - Concatenate and minify javascript files.
 
-`grunt styles` - Comb, compile, prefix, combine media queries, and minify scss files.
-
-`grunt watch` - Automatically handle changes to javascript and css files.
+`grunt styles` - Comb, compile, prefix, combine media queries, and minify CSS files.
 
 `grunt imageminnewer` - Minify images.
 
