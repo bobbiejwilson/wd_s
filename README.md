@@ -6,17 +6,17 @@ A project boilerplate for WebDevStudios.
 ### Includes the following Submodules
 
 * [WDS Underscores](https://github.com/WebDevStudios/_s)
+* [Bourbon](https://github.com/thoughtbot/bourbon)
+* [Neat](https://github.com/thoughtbot/neat)
 * [CMB2](https://github.com/WebDevStudios/CMB2)
 * [CPT Core](https://github.com/WebDevStudios/CPT_Core)
 * [Taxonomy Core](https://github.com/WebDevStudios/Taxonomy_Core)
+* [WDS TLC Transients](https://github.com/WebDevStudios/WDS-TLC-Transients)
 * [WDS Required Plugins](https://github.com/WebDevStudios/WDS-Required-Plugins)
 * [WDS Widget Boilerplate](https://github.com/WebDevStudios/WDS-Widget-Boilerplate)
 * [Debug Bar](https://github.com/brandwaffle/wp-debug-bar.git)
 * [Jetpack](https://github.com/Automattic/jetpack)
 * [Regenerate Thumbnails](https://github.com/Viper007Bond/regenerate-thumbnails)
-* [WDS TLC Transients](https://github.com/WebDevStudios/WDS-TLC-Transients)
-* [Bourbon](https://github.com/thoughtbot/bourbon)
-* [Neat](https://github.com/thoughtbot/neat)
 
 ### Automagic Installation
 
