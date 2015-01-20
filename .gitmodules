@@ -25,3 +25,6 @@
 [submodule "plugins/wds-tlc-transients"]
 	path = plugins/wds-tlc-transients
 	url = https://github.com/WebDevStudios/WDS-TLC-Transients.git
+[submodule "plugins/wds-widget-boilerplate"]
+	path = plugins/wds-widget-boilerplate
+	url = https://github.com/WebDevStudios/WDS-Widget-Boilerplate.git
