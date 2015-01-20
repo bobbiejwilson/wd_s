@@ -13,6 +13,7 @@ A project boilerplate for WebDevStudios.
 * [Taxonomy Core](https://github.com/WebDevStudios/Taxonomy_Core)
 * [WDS TLC Transients](https://github.com/WebDevStudios/WDS-TLC-Transients)
 * [WDS Required Plugins](https://github.com/WebDevStudios/WDS-Required-Plugins)
+* [WDS Plugin Boilerplate](https://github.com/WebDevStudios/WDS-Plugin-Boilerplate)
 * [WDS Widget Boilerplate](https://github.com/WebDevStudios/WDS-Widget-Boilerplate)
 * [Debug Bar](https://github.com/brandwaffle/wp-debug-bar.git)
 * [Jetpack](https://github.com/Automattic/jetpack)
