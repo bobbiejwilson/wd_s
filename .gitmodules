@@ -28,3 +28,6 @@
 [submodule "plugins/wds-widget-boilerplate"]
 	path = plugins/wds-widget-boilerplate
 	url = https://github.com/WebDevStudios/WDS-Widget-Boilerplate.git
+[submodule "plugins/wds-plugin-boilerplate"]
+	path = plugins/wds-plugin-boilerplate
+	url = https://github.com/WebDevStudios/WDS-Plugin-Boilerplate.git
