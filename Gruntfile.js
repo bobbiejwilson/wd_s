@@ -122,6 +122,7 @@ module.exports = function(grunt) {
 				tasks: ['javascript'],
 				options: {
 					spawn: false,
+					livereload: true,
 				},
 			},
 
