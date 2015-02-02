@@ -97,7 +97,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: 'themes/_s/js/',
-					src: ['**/*.js', '!**/*.min.js', '!partials/*.js'],
+					src: ['**/*.js', '!**/*.min.js', '!concat/*.js'],
 					dest: 'themes/_s/js/',
 					ext: '.min.js'
 				}]
