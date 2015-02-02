@@ -4,7 +4,6 @@ upgrade/
 backup-db/
 cache/
 backups/
-bower_components/
 node_modules/
 .idea/
 
