@@ -16,8 +16,8 @@ module.exports = function(grunt) {
 		sprite: {
 			all: {
 				'src': 'themes/_s/images/sprites/*.png',
-				'destImg': 'themes/_s/images/sprites.png',
-				'destCSS': 'themes/_s/sass/partials/_sprites.scss',
+				'dest': 'themes/_s/images/sprites.png',
+				'destCss': 'themes/_s/sass/partials/_sprites.scss',
 				'imgPath': 'images/sprites.png',
 				'algorithm': 'binary-tree',
 			}
