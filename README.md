@@ -19,22 +19,33 @@ A project boilerplate for WebDevStudios.
 * [Jetpack](https://github.com/Automattic/jetpack)
 * [Regenerate Thumbnails](https://github.com/Viper007Bond/regenerate-thumbnails)
 
-### Automagic Installation
+# Installation
 
-The easiest way to get started is by using Yeoman. Otherwise, you can manually clone this repo and set this up by hand.
+### Prerequisites
+You will need the following programs to use wd_s:
 
-#### Use Yeoman
+- Node ([http://nodejs.org/](http://nodejs.org/))
+- Grunt CLI ([http://gruntjs.com/](http://gruntjs.com/)) - `npm install -g grunt-cli`
+- Bower ([http://bower.io/](http://bower.io/)) - `npm install -g bower`
 
-`npm install -g yo generator-wd-s` - Install [Yeoman](http://yeoman.io/) and use the wd_s generator
+## Automatic Installation
 
-`yo wd-s` - In the wp-content folder of a new project, follow the prompts and a new magically created wd_s install with your project name in it's place!
+The easiest way to get started is by using [Yeoman](http://yeoman.io/). It will ask you a series of questions and then pull everything down for you.
 
-#### Install Grunt and Dependencies
+##### 1) Run Yeoman
+
+- `npm install -g yo generator-wd-s` - Will install Yeoman and the wd_s generator
+
+-  In the wp-content folder of a new project, type `yo wd-s` and follow the prompts.
+
+##### 2) Install Grunt and Dependencies
 * Run `npm install && bower install ` from the command line to install Grunt and dependencies.
 
 ## Manual Installation
 
-#### Clone
+Setting up by hand is a bit harder, but if you're comfortable with Git and doing a find & replace, you can get up and running a minutes.
+
+##### 1) Clone
 
 **You'll need to clone recursive this repo, not download the zip!** (It includes submodules and they won't be included in the zip)
 
@@ -46,7 +57,7 @@ The easiest way to get started is by using Yeoman. Otherwise, you can manually c
 
   Clone normally, but select "Recurse submodules"
 
-#### Find & Replace
+##### 2) Find & Replace
 
 You'll need to change all instances of the names: `_s`.
 
@@ -55,15 +66,17 @@ You'll need to change all instances of the names: `_s`.
 * Search for: `_s_` and replace with: `project-name_`
   * to capture all the function names
 * Search for: `Text Domain: _s` and replace with: `Text Domain: project-name` in style.css.
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Project Name</code>
+* Search for (and include the leading space): <code>&nbsp;_s</code> and replace with: <code>&nbsp;Project Name</code>
    * (with a space before it) to capture DocBlocks.
 * Search for: `_s-` and replace with: `project-name-`
   * to capture prefixed handles
 
-#### Install Grunt and Dependencies
-* Run `npm install && bower install ` from the command line to install Grunt and dependencies.
+##### 3) Install Grunt and Dependencies
+* Run `npm install && bower install ` from the command line to install Grunt and pull down any dependencies via Bower.
 
-## Grunt Tasks
+## Using Grunt
+
+Grunt is included and there are a few default tasks available:
 
 `grunt watch` - Automatically handle changes to CSS, javascript, and image sprites.
 
