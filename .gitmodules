@@ -31,3 +31,12 @@
 [submodule "plugins/wds-plugin-boilerplate"]
 	path = plugins/wds-plugin-boilerplate
 	url = https://github.com/WebDevStudios/WDS-Plugin-Boilerplate.git
+[submodule "plugins/query-monitor"]
+	path = plugins/query-monitor
+	url = https://github.com/johnbillion/query-monitor.git
+[submodule "plugins/transients-manager"]
+	path = plugins/transients-manager
+	url = https://github.com/pippinsplugins/Transients-Manager.git
+[submodule "plugins/theme-check"]
+	path = plugins/theme-check
+	url = https://github.com/Otto42/theme-check.git
