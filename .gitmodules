@@ -13,9 +13,6 @@
 [submodule "themes/_s"]
 	path = themes/_s
 	url = https://github.com/WebDevStudios/_s.git
-[submodule "plugins/debug-bar"]
-	path = plugins/debug-bar
-	url = https://github.com/brandwaffle/wp-debug-bar.git
 [submodule "plugins/jetpack"]
 	path = plugins/jetpack
 	url = https://github.com/Automattic/jetpack.git
@@ -37,6 +34,6 @@
 [submodule "plugins/transients-manager"]
 	path = plugins/transients-manager
 	url = https://github.com/pippinsplugins/Transients-Manager.git
-[submodule "plugins/theme-check"]
+[submodule "theme-check"]
 	path = plugins/theme-check
 	url = https://github.com/Otto42/theme-check.git
