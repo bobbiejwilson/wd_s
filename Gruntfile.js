@@ -236,6 +236,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('styles', ['sass', 'autoprefixer', 'cmq', 'csscomb', 'cssmin']);
 	grunt.registerTask('javascript', ['concat', 'uglify']);
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
+	grunt.registerTask('sprites', ['sprite']);
 	grunt.registerTask('i18n', ['makepot']);
 	grunt.registerTask('default', ['update_submodules', 'sprite', 'styles', 'javascript', 'imageminnewer', 'i18n']);
 
