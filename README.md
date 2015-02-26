@@ -1,9 +1,9 @@
 wd_s
 ====
 
-A project boilerplate for WebDevStudios.
+A new project boilerplate for [WebDevStudios](http://webdevstudios.com).
 
-### Includes the following Submodules
+# Includes
 
 * [WDS Underscores](https://github.com/WebDevStudios/_s)
 * [Bourbon](https://github.com/thoughtbot/bourbon)
@@ -15,75 +15,97 @@ A project boilerplate for WebDevStudios.
 * [WDS Required Plugins](https://github.com/WebDevStudios/WDS-Required-Plugins)
 * [WDS Plugin Boilerplate](https://github.com/WebDevStudios/WDS-Plugin-Boilerplate)
 * [WDS Widget Boilerplate](https://github.com/WebDevStudios/WDS-Widget-Boilerplate)
-* [Debug Bar](https://github.com/brandwaffle/wp-debug-bar.git)
+* [Transient Manager](https://github.com/pippinsplugins/Transients-Manager.git)
 * [Jetpack](https://github.com/Automattic/jetpack)
 * [Regenerate Thumbnails](https://github.com/Viper007Bond/regenerate-thumbnails)
+* [Theme Check](https://github.com/Otto42/theme-check.git)
 
-# Installation
+# Pre-Installation
 
-### Prerequisites
-You will need the following programs to use wd_s:
+Basic knowledge of the command line and the following dependencies are required to use wd_s:
 
 - Node ([http://nodejs.org/](http://nodejs.org/))
+- Ruby ([http://rubyinstaller.org/](http://rubyinstaller.org/))
 - Grunt CLI ([http://gruntjs.com/](http://gruntjs.com/)) - `npm install -g grunt-cli`
 - Bower ([http://bower.io/](http://bower.io/)) - `npm install -g bower`
+- Sass ([http://sass-lang.com/](http://sass-lang.com/install)) - `gem install sass`
+- A fresh install of [https://wordpress.org/](https://wordpress.org/) and an empty /wp-content directory!
+
+#Installation
 
 ## Automatic Installation
 
-The easiest way to get started is by using [Yeoman](http://yeoman.io/). It will ask you a series of questions and then pull everything down for you.
+The easiest way to get started is by using [Yeoman](http://yeoman.io/). It will ask you a series of questions, pull everything down, and set up wd_s in an empty /wp-content directory.
 
-##### 1) Run Yeoman
+##### 1) Delete everything inside /wp-content!
 
-- `npm install -g yo generator-wd-s` - Will install Yeoman and the wd_s generator
+##### 2) Navigate to the /wp-content folder of your project 
+`cd /your-project/wordpress/wp-content`
 
--  In the wp-content folder of a new project, type `yo wd-s` and follow the prompts.
+##### 3) Install Yeoman & wd_s Generator
+`npm install -g yo generator-wd-s`
 
-##### 2) Install Grunt and Dependencies
-* Run `npm install && bower install ` from the command line to install Grunt and dependencies.
+##### 4) Run Yeoman
+`yo wd-s`
+
+##### 5) Install Grunt and Dependencies
+`npm install && bower install `
+
+That's it! You're ready to start using [Grunt](https://github.com/WebDevStudios/wd_s/blob/master/README.md#using-grunt)!
 
 ## Manual Installation
 
 Setting up by hand is a bit harder, but if you're comfortable with Git and doing a find & replace, you can get up and running a minutes.
 
-##### 1) Clone
+##### 1) Delete everything inside /wp-content!
+
+##### 2) Navigate to the /wp-content folder of your project 
+`cd /your-project/wordpress/wp-content`
+
+##### 3) Clone
 
 **You'll need to clone recursive this repo, not download the zip!** (It includes submodules and they won't be included in the zip)
 
-* Via command line / Terminal:
+- Via command line / Terminal:
 
   `git clone --recursive git@github.com:WebDevStudios/wd_s.git`
 
-* Via SourceTree/Tower:
+- Via SourceTree/Tower:
 
   Clone normally, but select "Recurse submodules"
 
-##### 2) Find & Replace
+##### 4) Find & Replace
 
-You'll need to change all instances of the names: `_s`.
+You'll need to change all instances of the names: `_s` to your project name.
 
-* Search for: `'_s'` and replace with: `'project-name'`
-  * (inside single quotations) to capture the text domain
-* Search for: `_s_` and replace with: `project-name_`
-  * to capture all the function names
-* Search for: `Text Domain: _s` and replace with: `Text Domain: project-name` in style.css.
-* Search for (and include the leading space): <code>&nbsp;_s</code> and replace with: <code>&nbsp;Project Name</code>
-   * (with a space before it) to capture DocBlocks.
-* Search for: `_s-` and replace with: `project-name-`
-  * to capture prefixed handles
+- Search for: `'_s'` and replace with: `'project-name'` (inside single quotations) to capture the text domain
+- Search for: `_s_` and replace with: `project-name_` to capture all the function names
+- Search for: `Text Domain: _s` and replace with: `Text Domain: project-name` in style.css
+- Search for (and include the leading space): <code>&nbsp;_s</code> and replace with: <code>&nbsp;Project Name</code>(with a space before it) to capture DocBlocks
+- Search for: `_s-` and replace with: `project-name-` to capture prefixed handles
 
-##### 3) Install Grunt and Dependencies
-* Run `npm install && bower install ` from the command line to install Grunt and pull down any dependencies via Bower.
+##### 5) Install Grunt and Dependencies
+- Run `npm install && bower install` from the command line to install Grunt and pull down any dependencies via Bower.
+
+That's it! You're ready to start using [Grunt](https://github.com/WebDevStudios/wd_s/blob/master/README.md#using-grunt)!
 
 ## Using Grunt
 
-Grunt is included and there are a few default tasks available:
+##### 1) Navigate to the /wp-content folder of your project 
+`cd /your-project/wordpress/wp-content`
 
-`grunt watch` - Automatically handle changes to CSS, javascript, and image sprites.
+##### 2) Grunt tasks available:
 
-`grunt javascript` - Concatenate and minify javascript files.
+`grunt watch` - Automatically handle changes to CSS, javascript, and image sprites
 
-`grunt styles` - Comb, compile, prefix, combine media queries, and minify CSS files.
+`grunt javascript` - Concatenate and minify javascript files
 
-`grunt imageminnewer` - Minify images.
+`grunt styles` - Comb, compile, prefix, combine media queries, and minify CSS files
+
+`grunt imageminnewer` - Minify images
+
+`grunt sprites` - Generate image sprites and the associated CSS
+
+`grunt i18n` - Generate a translation file
 
 `grunt` - Do it all once!
