@@ -42,14 +42,8 @@ The easiest way to get started is by using [Yeoman](http://yeoman.io/). It will 
 ##### 2) Navigate to the /wp-content folder of your project 
 `cd /your-project/wordpress/wp-content`
 
-##### 3) Install Yeoman & wd_s Generator
-`npm install -g yo generator-wd-s`
-
-##### 4) Run Yeoman
-`yo wd-s`
-
-##### 5) Install Grunt and Dependencies
-`npm install && bower install `
+##### 3) Install Yeoman, the wd_s generator, and kick it all off!
+`npm install -g yo generator-wd-s && yo wd-s`
 
 That's it! You're ready to start using [Grunt](https://github.com/WebDevStudios/wd_s/blob/master/README.md#using-grunt)!
 
