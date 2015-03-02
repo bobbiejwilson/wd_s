@@ -203,21 +203,6 @@ module.exports = function(grunt) {
 			*/
 		},
 
-		update_submodules: {
-
-			default: {
-				options: {
-					// default command line parameters will be used: --init --recursive
-				}
-			},
-			withCustomParameters: {
-				options: {
-					params: '--force' // specifies your own command-line parameters
-				}
-			},
-
-		},
-
 		phpcs: {
 			application: {
 				dir: [
@@ -238,6 +223,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
 	grunt.registerTask('sprites', ['sprite']);
 	grunt.registerTask('i18n', ['makepot']);
-	grunt.registerTask('default', ['update_submodules', 'sprite', 'styles', 'javascript', 'imageminnewer', 'i18n']);
+	grunt.registerTask('default', ['styles', 'javascript', 'sprite', 'imageminnewer', 'i18n']);
 
 };
