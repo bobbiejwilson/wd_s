@@ -7,6 +7,9 @@ backups/
 node_modules/
 .idea/
 
+# don't ignore the W3 Total Cache /Cache directory!
+!plugins/w3-total-cache/lib/W3/Cache
+
 .htaccess
 .sass-cache
 compass_app_log.txt
