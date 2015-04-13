@@ -39,11 +39,11 @@ The easiest way to get started is by using [Yeoman](http://yeoman.io/). It will 
 
 ##### 1) Delete everything inside /wp-content!
 
-##### 2) Navigate to the /wp-content folder of your project 
+##### 2) Navigate to the /wp-content folder of your project
 `cd /your-project/wordpress/wp-content`
 
 ##### 3) Install Yeoman, the wd_s generator, and kick it all off!
-`npm install -g yo generator-wd-s && yo wd-s`
+`npm install -g generator-wd-s && yo wd-s`
 
 That's it! You're ready to start using [Grunt](https://github.com/WebDevStudios/wd_s/blob/master/README.md#using-grunt)!
 
@@ -53,7 +53,7 @@ Setting up by hand is a bit harder, but if you're comfortable with Git and doing
 
 ##### 1) Delete everything inside /wp-content!
 
-##### 2) Navigate to the /wp-content folder of your project 
+##### 2) Navigate to the /wp-content folder of your project
 `cd /your-project/wordpress/wp-content`
 
 ##### 3) Clone
@@ -85,7 +85,7 @@ That's it! You're ready to start using [Grunt](https://github.com/WebDevStudios/
 
 ## Using Grunt
 
-##### 1) Navigate to the /wp-content folder of your project 
+##### 1) Navigate to the /wp-content folder of your project
 `cd /your-project/wordpress/wp-content`
 
 ##### 2) Grunt tasks available:
