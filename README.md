@@ -1,7 +1,7 @@
 wd_s
 ====
 
-A new project boilerplate for [WebDevStudios](http://webdevstudios.com).
+A new project boilerplate for [WebDevStudios](http://webdevstudios.com). This is intented to replace the entire `/wp-content` directory of a fresh WordPress install.
 
 # Includes
 
