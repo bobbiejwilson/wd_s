@@ -51,24 +51,24 @@ That's it! You're ready to start using [Grunt](https://github.com/WebDevStudios/
 
 Setting up by hand is a bit harder, but if you're comfortable with Git and doing a find & replace, you can get up and running a minutes.
 
-##### 1) Delete everything inside /wp-content!
+##### 1) Navigate to your new WordPress project and delete /wp-content
 
-##### 2) Navigate to the /wp-content folder of your project
-`cd /your-project/wordpress/wp-content`
-
-##### 3) Clone
+##### 2) Clone
 
 **You'll need to clone recursive this repo, not download the zip!** (It includes submodules and they won't be included in the zip)
 
 - Via command line / Terminal:
 
-  `git clone --recursive git@github.com:WebDevStudios/wd_s.git`
+  `git clone --recursive git@github.com:WebDevStudios/wd_s.git wp-content`
 
 - Via SourceTree/Tower:
 
-  Clone normally, but select "Recurse submodules"
+  Clone normally, but select "Recurse submodules" and clone into `/wp-content`
 
-##### 4) Find & Replace
+##### 4) Navigate to the theme folder
+`cd /your-project/wordpress/wp-content/_s/`
+
+##### 5) Find & Replace
 
 You'll need to change all instances of the names: `_s` to your project name.
 
@@ -78,15 +78,15 @@ You'll need to change all instances of the names: `_s` to your project name.
 - Search for (and include the leading space): <code>&nbsp;_s</code> and replace with: <code>&nbsp;Project Name</code>(with a space before it) to capture DocBlocks
 - Search for: `_s-` and replace with: `project-name-` to capture prefixed handles
 
-##### 5) Install Grunt and Dependencies
+##### 6) Install Grunt and Dependencies
 - Run `npm install && bower install` from the command line to install Grunt and pull down any dependencies via Bower.
 
 That's it! You're ready to start using [Grunt](https://github.com/WebDevStudios/wd_s/blob/master/README.md#using-grunt)!
 
 ## Using Grunt
 
-##### 1) Navigate to the /wp-content folder of your project
-`cd /your-project/wordpress/wp-content`
+##### 1) Navigate to the theme folder 
+`cd /your-project/wordpress/wp-content/_s`
 
 ##### 2) Grunt tasks available:
 
